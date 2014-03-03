@@ -1,0 +1,1609 @@
+/*--| Base
+-------------------------------------------------------------------------- |--*/
+/*
+FedeHartman Reset
+Site URI: http://fedehartman.com
+Coding Date: 2008 - 2013
+*/
+/*--| NORMALIZE
+------------------------------------------------------------------------------------------------------------------ |--*/
+/* line 14, base/reset.scss */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video, img { margin: 0px; padding: 0px; vertical-align: baseline; font-family: inherit; font-weight: inherit; font-style: inherit; font-size: 100%; text-transform: none; text-decoration: none; line-height: normal; font-variant: normal; white-space: normal; border: 0; list-style-image: none; list-style-type: none; }
+
+/* line 34, base/reset.scss */
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+
+/* line 40, base/reset.scss */
+audio:not([controls]) { display: none; height: 0; }
+
+/*--| HTML 5
+------------------------------------------------------------------------------------------------------------------ |--*/
+/* line 50, base/reset.scss */
+article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, small { display: block; }
+
+/*--| IMG
+------------------------------------------------------------------------------------------------------------------ |--*/
+/* line 59, base/reset.scss */
+img { border: none; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; display: block; }
+
+/* line 60, base/reset.scss */
+img a { border: none; }
+
+/*--| ICONS
+------------------------------------------------------------------------------------------------------------------ |--*/
+/* line 69, base/reset.scss */
+i { display: inline-block; vertical-align: text-top; }
+
+/*--| LINKS
+------------------------------------------------------------------------------------------------------------------ |--*/
+/* line 78, base/reset.scss */
+a, a:link, a:visited, a:hover, a:active { outline-style: none; outline-style: 0; outline-width: 0px; text-decoration: none; }
+
+/*--| SPECIAL CLASSES
+------------------------------------------------------------------------------------------------------------------ |--*/
+/* line 92, base/reset.scss */
+.left { float: left; }
+
+/* line 93, base/reset.scss */
+.right { float: right; }
+
+/* line 94, base/reset.scss */
+hr, .none { display: none; }
+
+/* line 95, base/reset.scss */
+.no-scroll { overflow: hidden; }
+
+/*--| FORM
+------------------------------------------------------------------------------------------------------------------ |--*/
+/* line 103, base/reset.scss */
+input, select { vertical-align: middle; }
+
+/* line 104, base/reset.scss */
+:focus { outline: 0; }
+
+/* line 105, base/reset.scss */
+input, textarea { outline-style: none; outline-width: 0px; }
+
+/* line 107, base/reset.scss */
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/* line 108, base/reset.scss */
+textarea { overflow: auto; vertical-align: top; }
+
+/*--| TABLES
+------------------------------------------------------------------------------------------------------------------ |--*/
+/* line 117, base/reset.scss */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/*--| TYPOGRAPHY
+------------------------------------------------------------------------------------------------------------------ |--*/
+/* line 125, base/reset.scss */
+html { font-size: 16px; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; }
+
+/* line 132, base/reset.scss */
+body { font-size: 62.5%; }
+
+/* line 137, base/reset.scss */
+html, button, input, select, textarea { font-family: sans-serif; }
+
+/* line 138, base/reset.scss */
+strong { font-weight: 700; }
+
+/* line 139, base/reset.scss */
+em { font-style: italic; }
+
+/* line 140, base/reset.scss */
+span.versales { font-variant: small-caps; }
+
+/* line 141, base/reset.scss */
+del { text-decoration: line-through; }
+
+/* line 142, base/reset.scss */
+blockquote, q { quotes: none; }
+
+/* line 143, base/reset.scss */
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+/*--| BODY
+------------------------------------------------------------------------------------------------------------------ |--*/
+/* line 155, base/reset.scss */
+html, body { height: auto; overflow-x: hidden; }
+
+/*--| ------------------------------------------------------------------------------------------------------------ |--*/
+/*--| Tipografías
+-------------------------------------------------------------------------- |--*/
+@font-face { font-family: 'Asap'; font-style: normal; font-weight: 400; src: local("Asap"), local("Asap-Regular"), url(http://themes.googleusercontent.com/static/fonts/asap/v2/SgBaq0dzhSGNMfqm2JX5ng.woff) format("woff"); }
+
+@font-face { font-family: 'Asap'; font-style: normal; font-weight: 700; src: local("Asap Bold"), local("Asap-Bold"), url(http://themes.googleusercontent.com/static/fonts/asap/v2/yVILXKVgPzaz72DegpV7Bg.woff) format("woff"); }
+
+@font-face { font-family: 'Asap'; font-style: italic; font-weight: 400; src: local("Asap Italic"), local("Asap-Italic"), url(http://themes.googleusercontent.com/static/fonts/asap/v2/MdJnJ_Rxy6GcPmasGZsTfQ.woff) format("woff"); }
+
+@font-face { font-family: 'Asap'; font-style: italic; font-weight: 700; src: local("Asap Bold Italic"), local("Asap-BoldItalic"), url(http://themes.googleusercontent.com/static/fonts/asap/v2/_sVKdO-TLWvaH-ptGimJBT8E0i7KZn-EPnyo3HZu7kw.woff) format("woff"); }
+
+@font-face { font-family: 'aw'; src: url("../../font/front/aw/aw.eot?v=3.2.1"); src: url("../../font/front/aw/aw.eot?#iefix&v=3.2.1") format("embedded-opentype"), url("../../font/front/aw/aw.woff?v=3.2.1") format("woff"), url("../../font/front/aw/aw.ttf?v=3.2.1") format("truetype"), url("../../font/front/aw/aw.svg#fontawesomeregular?v=3.2.1") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'pre'; src: url("../../font/front/pre/pre.eot?v=3.2.1"); src: url("../../font/front/pre/pre.eot?#iefix&v=3.2.1") format("embedded-opentype"), url("../../font/front/pre/pre.woff?v=3.2.1") format("woff"), url("../../font/front/pre/pre.ttf?v=3.2.1") format("truetype"), url("../../font/front/pre/pre.svg#fontawesomeregular?v=3.2.1") format("svg"); font-weight: normal; font-style: normal; }
+
+/*--| Body
+-------------------------------------------------------------------------- |--*/
+/* line 3, base/body.scss */
+.fa { background-color: #2156a6; margin: 0px 0px 0px 0px; }
+
+/* line 4, base/body.scss */
+html { overflow: hidden; }
+
+/* line 6, base/body.scss */
+.a00, .a01, .a02, .a03, .a04, .tapar { width: 100%; height: 100%; background-color: #fff; position: absolute; overflow: hidden; z-index: 900; -webkit-transition: all 0.8s ease-in-out; -moz-transition: all 0.8s ease-in-out; -ms-transition: all 0.8s ease-in-out; -o-transition: all 0.8s ease-in-out; transition: all 0.8s ease-in-out; }
+
+/* line 20, base/body.scss */
+.a00 { background-color: #fff; z-index: 0; }
+
+/*home*/
+/* line 21, base/body.scss */
+.a01 { background-color: #2e6399; right: -100%; }
+
+/*votación*/
+/* line 22, base/body.scss */
+.a02 { background-color: #d9584c; left: -100%; }
+
+/* line 23, base/body.scss */
+.a03 { background-color: #d99048; bottom: -100%; }
+
+/* line 24, base/body.scss */
+.a04 { background: #609926 url(../../img/front/patterns/green.png) repeat 0px 0px; top: -100%; }
+
+/*tienda*/
+/* line 25, base/body.scss */
+.tapar { background-color: #e6bd45; z-index: 800; top: 0px; left: 0px; }
+
+/* line 27, base/body.scss */
+.m01 { top: 0%; right: 0%; }
+
+/* line 28, base/body.scss */
+.m02 { top: 0%; left: 0%; }
+
+/* line 29, base/body.scss */
+.m03 { bottom: 0%; left: 0%; }
+
+/* line 30, base/body.scss */
+.m04 { top: 0%; left: 0%; }
+
+/* line 32, base/body.scss */
+.wrapper { position: absolute; top: 50%; left: 50%; margin: -18% 0px 0px -49%; }
+
+/*--| 1· Big Screen
+-------------------------------------------------------------------------- |--*/
+@media (min-width: 1441px) { /* line 6, base/mq.scss */
+  .wrapper, .nano { height: 82%; margin-top: -20%; }
+  /* line 7, base/mq.scss */
+  .categorias li { margin: 10px; } }
+/*--| 2· 1440
+-------------------------------------------------------------------------- |--*/
+@media (max-width: 1440px) and (min-width: 1367px) { /* line 20, base/mq.scss */
+  .wrapper, .nano { height: 80%; margin-top: -21%; }
+  /* line 21, base/mq.scss */
+  .categorias li { margin: 24px; } }
+/*--| 3· 1280
+-------------------------------------------------------------------------- |--*/
+@media (max-width: 1280px) and (min-width: 1025px) { /* line 34, base/mq.scss */
+  .wrapper, .nano { height: 78%; margin-top: -20%; }
+  /* line 35, base/mq.scss */
+  .categorias li { margin: 7px; } }
+/*--| 4· 1024
+-------------------------------------------------------------------------- |--*/
+@media (max-width: 1024px) and (min-width: 781px) { /* line 48, base/mq.scss */
+  .wrapper, .nano { height: 78%; margin-top: -25%; } }
+/*--| 4· 1024
+-------------------------------------------------------------------------- |--*/
+@media (max-width: 781px) and (min-width: 240px) { /* line 58, base/mq.scss */
+  .mobile { display: block; } }
+/* line 1, base/move.scss */
+.mov-imago { animation-name: mov-imago; -webkit-animation-name: mov-imago; -moz-animation-name: mov-imago; -o-animation-name: mov-imago; animation-duration: 2.5s; -webkit-animation-duration: 2.5s; -moz-animation-duration: 2.5s; -o-animation-duration: 2.5s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-imago { /* line 8, base/move.scss */
+  0% { opacity: 0.0; margin-top: -250px; }
+  /* line 9, base/move.scss */
+  80% { opacity: 0.0; margin-top: -250px; }
+  /* line 10, base/move.scss */
+  100% { opacity: 1.0; margin-top: 28px; } }
+
+@-moz-keyframes mov-imago { /* line 13, base/move.scss */
+  0% { opacity: 0.0; margin-top: -250px; }
+  /* line 14, base/move.scss */
+  80% { opacity: 0.0; margin-top: -250px; }
+  /* line 15, base/move.scss */
+  100% { opacity: 1.0; margin-top: 28px; } }
+
+@-o-keyframes mov-imago { /* line 18, base/move.scss */
+  0% { opacity: 0.0; margin-top: -250px; }
+  /* line 19, base/move.scss */
+  80% { opacity: 0.0; margin-top: -250px; }
+  /* line 20, base/move.scss */
+  100% { opacity: 1.0; margin-top: 28px; } }
+
+@keyframes mov-imago { /* line 23, base/move.scss */
+  0% { opacity: 0.0; margin-top: -250px; }
+  /* line 24, base/move.scss */
+  80% { opacity: 0.0; margin-top: -250px; }
+  /* line 25, base/move.scss */
+  100% { opacity: 1.0; margin-top: 28px; } }
+
+/*-*/
+/* line 30, base/move.scss */
+.mov-logo { animation-name: mov-logo; -webkit-animation-name: mov-logo; -moz-animation-name: mov-logo; -o-animation-name: mov-logo; animation-duration: 2.5s; -webkit-animation-duration: 2.5s; -moz-animation-duration: 2.5s; -o-animation-duration: 2.5s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-logo { /* line 37, base/move.scss */
+  0% { opacity: 0.0; margin-top: 200px; }
+  /* line 38, base/move.scss */
+  80% { opacity: 0.0; margin-top: 200px; }
+  /* line 39, base/move.scss */
+  100% { opacity: 1.0; margin-top: 28px; } }
+
+@-moz-keyframes mov-logo { /* line 42, base/move.scss */
+  0% { opacity: 0.0; margin-top: 200px; }
+  /* line 43, base/move.scss */
+  80% { opacity: 0.0; margin-top: 200px; }
+  /* line 44, base/move.scss */
+  100% { opacity: 1.0; margin-top: 28px; } }
+
+@-o-keyframes mov-logo { /* line 47, base/move.scss */
+  0% { opacity: 0.0; margin-top: 200px; }
+  /* line 48, base/move.scss */
+  80% { opacity: 0.0; margin-top: 200px; }
+  /* line 49, base/move.scss */
+  100% { opacity: 1.0; margin-top: 28px; } }
+
+@keyframes mov-logo { /* line 52, base/move.scss */
+  0% { opacity: 0.0; margin-top: 200px; }
+  /* line 53, base/move.scss */
+  80% { opacity: 0.0; margin-top: 200px; }
+  /* line 54, base/move.scss */
+  100% { opacity: 1.0; margin-top: 28px; } }
+
+/*-*/
+/* line 60, base/move.scss */
+.mov-line01 { animation-name: mov-line01; -webkit-animation-name: mov-line01; -moz-animation-name: mov-line01; -o-animation-name: mov-line01; animation-duration: 2.8s; -webkit-animation-duration: 2.8s; -moz-animation-duration: 2.8s; -o-animation-duration: 2.8s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-line01 { /* line 67, base/move.scss */
+  0% { opacity: 0.0; width: 0px; }
+  /* line 68, base/move.scss */
+  96% { opacity: 0.0; width: 0px; }
+  /* line 69, base/move.scss */
+  100% { opacity: 1.0; width: 90px; } }
+
+@-moz-keyframes mov-line01 { /* line 72, base/move.scss */
+  0% { opacity: 0.0; width: 0px; }
+  /* line 73, base/move.scss */
+  96% { opacity: 0.0; width: 0px; }
+  /* line 74, base/move.scss */
+  100% { opacity: 1.0; width: 90px; } }
+
+@-o-keyframes mov-line01 { /* line 77, base/move.scss */
+  0% { opacity: 0.0; width: 0px; }
+  /* line 78, base/move.scss */
+  96% { opacity: 0.0; width: 0px; }
+  /* line 79, base/move.scss */
+  100% { opacity: 1.0; width: 90px; } }
+
+@keyframes mov-line01 { /* line 82, base/move.scss */
+  0% { opacity: 0.0; width: 0px; }
+  /* line 83, base/move.scss */
+  96% { opacity: 0.0; width: 0px; }
+  /* line 84, base/move.scss */
+  100% { opacity: 1.0; width: 90px; } }
+
+/*-*/
+/* line 90, base/move.scss */
+.mov-fecha { animation-name: mov-fecha; -webkit-animation-name: mov-fecha; -moz-animation-name: mov-fecha; -o-animation-name: mov-fecha; animation-duration: 3.2s; -webkit-animation-duration: 3.2s; -moz-animation-duration: 3.2s; -o-animation-duration: 3.2s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-fecha { /* line 97, base/move.scss */
+  0% { opacity: 0.0; margin-top: 80px; }
+  /* line 98, base/move.scss */
+  90% { opacity: 0.0; margin-top: 80px; }
+  /* line 99, base/move.scss */
+  100% { opacity: 1.0; margin-top: 119px; } }
+
+@-moz-keyframes mov-fecha { /* line 102, base/move.scss */
+  0% { opacity: 0.0; margin-top: 80px; }
+  /* line 103, base/move.scss */
+  90% { opacity: 0.0; margin-top: 80px; }
+  /* line 104, base/move.scss */
+  100% { opacity: 1.0; margin-top: 119px; } }
+
+@-o-keyframes mov-fecha { /* line 107, base/move.scss */
+  0% { opacity: 0.0; margin-top: 80px; }
+  /* line 108, base/move.scss */
+  90% { opacity: 0.0; margin-top: 80px; }
+  /* line 109, base/move.scss */
+  100% { opacity: 1.0; margin-top: 119px; } }
+
+@keyframes mov-fecha { /* line 112, base/move.scss */
+  0% { opacity: 0.0; margin-top: 80px; }
+  /* line 113, base/move.scss */
+  90% { opacity: 0.0; margin-top: 80px; }
+  /* line 114, base/move.scss */
+  100% { opacity: 1.0; margin-top: 119px; } }
+
+/*-*/
+/* line 119, base/move.scss */
+.mov-line02 { animation-name: mov-line02; -webkit-animation-name: mov-line02; -moz-animation-name: mov-line02; -o-animation-name: mov-line02; animation-duration: 4s; -webkit-animation-duration: 4s; -moz-animation-duration: 4s; -o-animation-duration: 4s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-line02 { /* line 126, base/move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 127, base/move.scss */
+  95% { opacity: 0.0; height: 0px; }
+  /* line 128, base/move.scss */
+  100% { opacity: 1.0; height: 72px; } }
+
+@-moz-keyframes mov-line02 { /* line 131, base/move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 132, base/move.scss */
+  95% { opacity: 0.0; height: 0px; }
+  /* line 133, base/move.scss */
+  100% { opacity: 1.0; height: 72px; } }
+
+@-o-keyframes mov-line02 { /* line 136, base/move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 137, base/move.scss */
+  95% { opacity: 0.0; height: 0px; }
+  /* line 138, base/move.scss */
+  100% { opacity: 1.0; height: 72px; } }
+
+@keyframes mov-line02 { /* line 141, base/move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 142, base/move.scss */
+  95% { opacity: 0.0; height: 0px; }
+  /* line 143, base/move.scss */
+  100% { opacity: 1.0; height: 72px; } }
+
+/*-*/
+/* line 148, base/move.scss */
+.mov-line03 { animation-name: mov-line03; -webkit-animation-name: mov-line03; -moz-animation-name: mov-line03; -o-animation-name: mov-line03; animation-duration: 5.3s; -webkit-animation-duration: 5.3s; -moz-animation-duration: 5.3s; -o-animation-duration: 5.3s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-line03 { /* line 155, base/move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 156, base/move.scss */
+  97% { opacity: 0.0; height: 0px; }
+  /* line 157, base/move.scss */
+  100% { opacity: 1.0; height: 36px; } }
+
+@-moz-keyframes mov-line03 { /* line 160, base/move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 161, base/move.scss */
+  97% { opacity: 0.0; height: 0px; }
+  /* line 162, base/move.scss */
+  100% { opacity: 1.0; height: 36px; } }
+
+@-o-keyframes mov-line03 { /* line 165, base/move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 166, base/move.scss */
+  97% { opacity: 0.0; height: 0px; }
+  /* line 167, base/move.scss */
+  100% { opacity: 1.0; height: 36px; } }
+
+@keyframes mov-line03 { /* line 170, base/move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 171, base/move.scss */
+  97% { opacity: 0.0; height: 0px; }
+  /* line 172, base/move.scss */
+  100% { opacity: 1.0; height: 36px; } }
+
+/*-*/
+/* line 177, base/move.scss */
+.mov-brief-01 { animation-name: mov-brief-01; -webkit-animation-name: mov-brief-01; -moz-animation-name: mov-brief-01; -o-animation-name: mov-brief-01; animation-duration: 4.6s; -webkit-animation-duration: 4.6s; -moz-animation-duration: 4.6s; -o-animation-duration: 4.6s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-brief-01 { /* line 184, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 185, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 186, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-brief-01 { /* line 189, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 190, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 191, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-brief-01 { /* line 194, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 195, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 196, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-brief-01 { /* line 199, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 200, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 201, base/move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 206, base/move.scss */
+.mov-brief-02 { animation-name: mov-brief-02; -webkit-animation-name: mov-brief-02; -moz-animation-name: mov-brief-02; -o-animation-name: mov-brief-02; animation-duration: 4.7s; -webkit-animation-duration: 4.7s; -moz-animation-duration: 4.7s; -o-animation-duration: 4.7s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-brief-02 { /* line 213, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 214, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 215, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-brief-02 { /* line 218, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 219, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 220, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-brief-02 { /* line 223, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 224, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 225, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-brief-02 { /* line 228, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 229, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 230, base/move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 235, base/move.scss */
+.mov-brief-03 { animation-name: mov-brief-03; -webkit-animation-name: mov-brief-03; -moz-animation-name: mov-brief-03; -o-animation-name: mov-brief-03; animation-duration: 4.8s; -webkit-animation-duration: 4.8s; -moz-animation-duration: 4.8s; -o-animation-duration: 4.8s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-brief-03 { /* line 242, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 243, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 244, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-brief-03 { /* line 247, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 248, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 249, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-brief-03 { /* line 252, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 253, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 254, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-brief-03 { /* line 257, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 258, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 259, base/move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 264, base/move.scss */
+.mov-social { animation-name: mov-social; -webkit-animation-name: mov-social; -moz-animation-name: mov-social; -o-animation-name: mov-social; animation-duration: 5.5s; -webkit-animation-duration: 5.5s; -moz-animation-duration: 5.5s; -o-animation-duration: 5.5s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-social { /* line 271, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 272, base/move.scss */
+  96% { opacity: 0.0; }
+  /* line 273, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-social { /* line 276, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 277, base/move.scss */
+  96% { opacity: 0.0; }
+  /* line 278, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-social { /* line 281, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 282, base/move.scss */
+  96% { opacity: 0.0; }
+  /* line 283, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-social { /* line 286, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 287, base/move.scss */
+  96% { opacity: 0.0; }
+  /* line 288, base/move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 293, base/move.scss */
+.mov-footer { animation-name: mov-footer; -webkit-animation-name: mov-footer; -moz-animation-name: mov-footer; -o-animation-name: mov-footer; animation-duration: 8s; -webkit-animation-duration: 8s; -moz-animation-duration: 8s; -o-animation-duration: 8s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-footer { /* line 300, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 301, base/move.scss */
+  75% { opacity: 0.0; }
+  /* line 302, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-footer { /* line 305, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 306, base/move.scss */
+  75% { opacity: 0.0; }
+  /* line 307, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-footer { /* line 310, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 311, base/move.scss */
+  75% { opacity: 0.0; }
+  /* line 312, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-footer { /* line 315, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 316, base/move.scss */
+  75% { opacity: 0.0; }
+  /* line 317, base/move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 322, base/move.scss */
+.mov-stage03 { animation-name: mov-stage03; -webkit-animation-name: mov-stage03; -moz-animation-name: mov-stage03; -o-animation-name: mov-stage03; animation-duration: 1s; -webkit-animation-duration: 1s; -moz-animation-duration: 1s; -o-animation-duration: 1s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-stage03 { /* line 329, base/move.scss */
+  0% { right: -100%; }
+  /* line 330, base/move.scss */
+  30% { right: -100%; }
+  /* line 331, base/move.scss */
+  100% { right: 0%; } }
+
+@-moz-keyframes mov-stage03 { /* line 334, base/move.scss */
+  0% { right: -100%; }
+  /* line 335, base/move.scss */
+  30% { right: -100%; }
+  /* line 336, base/move.scss */
+  100% { right: 0%; } }
+
+@-o-keyframes mov-stage03 { /* line 339, base/move.scss */
+  0% { right: -100%; }
+  /* line 340, base/move.scss */
+  30% { right: -100%; }
+  /* line 341, base/move.scss */
+  100% { right: 0%; } }
+
+@keyframes mov-stage03 { /* line 344, base/move.scss */
+  0% { right: -100%; }
+  /* line 345, base/move.scss */
+  30% { right: -100%; }
+  /* line 346, base/move.scss */
+  100% { right: 0%; } }
+
+/*-*/
+/*-*/
+/* line 353, base/move.scss */
+.mov-stage03b { animation-name: mov-stage03b; -webkit-animation-name: mov-stage03b; -moz-animation-name: mov-stage03b; -o-animation-name: mov-stage03b; animation-duration: 1s; -webkit-animation-duration: 1s; -moz-animation-duration: 1s; -o-animation-duration: 1s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-stage03b { /* line 360, base/move.scss */
+  0% { right: 0%; display: block; }
+  /* line 361, base/move.scss */
+  30% { right: 0%; display: block; }
+  /* line 362, base/move.scss */
+  100% { right: -100%; display: none; } }
+
+@-moz-keyframes mov-stage03b { /* line 365, base/move.scss */
+  0% { right: 0%; display: block; }
+  /* line 366, base/move.scss */
+  30% { right: 0%; display: block; }
+  /* line 367, base/move.scss */
+  100% { right: -100%; display: none; } }
+
+@-o-keyframes mov-stage03b { /* line 370, base/move.scss */
+  0% { right: 0%; display: block; }
+  /* line 371, base/move.scss */
+  30% { right: 0%; display: block; }
+  /* line 372, base/move.scss */
+  100% { right: -100%; display: none; } }
+
+@keyframes mov-stage03b { /* line 375, base/move.scss */
+  0% { right: 0%; display: block; }
+  /* line 376, base/move.scss */
+  30% { right: 0%; display: block; }
+  /* line 377, base/move.scss */
+  100% { right: -100%; display: none; } }
+
+/*-*/
+/* line 381, base/move.scss */
+.mov-text01 { animation-name: mov-text01; -webkit-animation-name: mov-text01; -moz-animation-name: mov-text01; -o-animation-name: mov-text01; animation-duration: 2s; -webkit-animation-duration: 2s; -moz-animation-duration: 2s; -o-animation-duration: 2s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-text01 { /* line 388, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 389, base/move.scss */
+  95% { opacity: 0.0; }
+  /* line 390, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-text01 { /* line 393, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 394, base/move.scss */
+  95% { opacity: 0.0; }
+  /* line 395, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-text01 { /* line 398, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 399, base/move.scss */
+  95% { opacity: 0.0; }
+  /* line 400, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-text01 { /* line 403, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 404, base/move.scss */
+  95% { opacity: 0.0; }
+  /* line 405, base/move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 411, base/move.scss */
+.mov-text02 { animation-name: mov-text02; -webkit-animation-name: mov-text02; -moz-animation-name: mov-text02; -o-animation-name: mov-text02; animation-duration: 2.5s; -webkit-animation-duration: 2.5s; -moz-animation-duration: 2.5s; -o-animation-duration: 2.5s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-text02 { /* line 418, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 419, base/move.scss */
+  92% { opacity: 0.0; }
+  /* line 420, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-text02 { /* line 423, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 424, base/move.scss */
+  92% { opacity: 0.0; }
+  /* line 425, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-text02 { /* line 428, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 429, base/move.scss */
+  92% { opacity: 0.0; }
+  /* line 430, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-text02 { /* line 433, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 434, base/move.scss */
+  92% { opacity: 0.0; }
+  /* line 435, base/move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 441, base/move.scss */
+.mov-text03 { animation-name: mov-text03; -webkit-animation-name: mov-text03; -moz-animation-name: mov-text03; -o-animation-name: mov-text03; animation-duration: 2.8s; -webkit-animation-duration: 2.8s; -moz-animation-duration: 2.8s; -o-animation-duration: 2.8s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-text03 { /* line 448, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 449, base/move.scss */
+  92% { opacity: 0.0; }
+  /* line 450, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-text03 { /* line 453, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 454, base/move.scss */
+  92% { opacity: 0.0; }
+  /* line 455, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-text03 { /* line 458, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 459, base/move.scss */
+  92% { opacity: 0.0; }
+  /* line 460, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-text03 { /* line 463, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 464, base/move.scss */
+  92% { opacity: 0.0; }
+  /* line 465, base/move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 472, base/move.scss */
+.mov-text04 { animation-name: mov-text04; -webkit-animation-name: mov-text04; -moz-animation-name: mov-text04; -o-animation-name: mov-text04; animation-duration: 3.2s; -webkit-animation-duration: 3.2s; -moz-animation-duration: 3.2s; -o-animation-duration: 3.2s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-text04 { /* line 479, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 480, base/move.scss */
+  94% { opacity: 0.0; }
+  /* line 481, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-text04 { /* line 484, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 485, base/move.scss */
+  94% { opacity: 0.0; }
+  /* line 486, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-text04 { /* line 489, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 490, base/move.scss */
+  94% { opacity: 0.0; }
+  /* line 491, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-text04 { /* line 494, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 495, base/move.scss */
+  94% { opacity: 0.0; }
+  /* line 496, base/move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 503, base/move.scss */
+.mov-text05 { animation-name: mov-text05; -webkit-animation-name: mov-text05; -moz-animation-name: mov-text05; -o-animation-name: mov-text05; animation-duration: 3.4s; -webkit-animation-duration: 3.4s; -moz-animation-duration: 3.4s; -o-animation-duration: 3.4s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-text05 { /* line 510, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 511, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 512, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-text05 { /* line 515, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 516, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 517, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-text05 { /* line 520, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 521, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 522, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-text05 { /* line 525, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 526, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 527, base/move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 534, base/move.scss */
+.mov-text06 { animation-name: mov-text06; -webkit-animation-name: mov-text06; -moz-animation-name: mov-text06; -o-animation-name: mov-text06; animation-duration: 3.6s; -webkit-animation-duration: 3.6s; -moz-animation-duration: 3.6s; -o-animation-duration: 3.6s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-text06 { /* line 541, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 542, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 543, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-text06 { /* line 546, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 547, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 548, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-text06 { /* line 551, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 552, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 553, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-text06 { /* line 556, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 557, base/move.scss */
+  93% { opacity: 0.0; }
+  /* line 558, base/move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 565, base/move.scss */
+.mov-text07 { animation-name: mov-text07; -webkit-animation-name: mov-text07; -moz-animation-name: mov-text07; -o-animation-name: mov-text07; animation-duration: 3.8s; -webkit-animation-duration: 3.8s; -moz-animation-duration: 3.8s; -o-animation-duration: 3.8s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-text07 { /* line 572, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 573, base/move.scss */
+  98% { opacity: 0.0; }
+  /* line 574, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-text07 { /* line 577, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 578, base/move.scss */
+  98% { opacity: 0.0; }
+  /* line 579, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-text07 { /* line 582, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 583, base/move.scss */
+  98% { opacity: 0.0; }
+  /* line 584, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-text07 { /* line 587, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 588, base/move.scss */
+  98% { opacity: 0.0; }
+  /* line 589, base/move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 596, base/move.scss */
+.mov-line04 { animation-name: mov-line04; -webkit-animation-name: mov-line04; -moz-animation-name: mov-line04; -o-animation-name: mov-line04; animation-duration: 6s; -webkit-animation-duration: 6s; -moz-animation-duration: 6s; -o-animation-duration: 6s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-line04 { /* line 603, base/move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 604, base/move.scss */
+  99% { opacity: 0.0; height: 0px; }
+  /* line 605, base/move.scss */
+  100% { opacity: 1.0; height: 75px; } }
+
+@-moz-keyframes mov-line04 { /* line 608, base/move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 609, base/move.scss */
+  99% { opacity: 0.0; height: 0px; }
+  /* line 610, base/move.scss */
+  100% { opacity: 1.0; height: 75px; } }
+
+@-o-keyframes mov-line04 { /* line 613, base/move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 614, base/move.scss */
+  99% { opacity: 0.0; height: 0px; }
+  /* line 615, base/move.scss */
+  100% { opacity: 1.0; height: 75px; } }
+
+@keyframes mov-line04 { /* line 618, base/move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 619, base/move.scss */
+  99% { opacity: 0.0; height: 0px; }
+  /* line 620, base/move.scss */
+  100% { opacity: 1.0; height: 75px; } }
+
+/*-*/
+/* line 626, base/move.scss */
+.mov-line05 { animation-name: mov-line05; -webkit-animation-name: mov-line05; -moz-animation-name: mov-line05; -o-animation-name: mov-line05; animation-duration: 6.05s; -webkit-animation-duration: 6.05s; -moz-animation-duration: 6.05s; -o-animation-duration: 6.05s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-line05 { /* line 633, base/move.scss */
+  0% { opacity: 0.0; width: 0px; }
+  /* line 634, base/move.scss */
+  99% { opacity: 0.0; width: 0px; }
+  /* line 635, base/move.scss */
+  100% { opacity: 1.0; width: 29px; } }
+
+@-moz-keyframes mov-line05 { /* line 638, base/move.scss */
+  0% { opacity: 0.0; width: 0px; }
+  /* line 639, base/move.scss */
+  99% { opacity: 0.0; width: 0px; }
+  /* line 640, base/move.scss */
+  100% { opacity: 1.0; width: 29px; } }
+
+@-o-keyframes mov-line05 { /* line 643, base/move.scss */
+  0% { opacity: 0.0; width: 0px; }
+  /* line 644, base/move.scss */
+  99% { opacity: 0.0; width: 0px; }
+  /* line 645, base/move.scss */
+  100% { opacity: 1.0; width: 29px; } }
+
+@keyframes mov-line05 { /* line 648, base/move.scss */
+  0% { opacity: 0.0; width: 0px; }
+  /* line 649, base/move.scss */
+  99% { opacity: 0.0; width: 0px; }
+  /* line 650, base/move.scss */
+  100% { opacity: 1.0; width: 29px; } }
+
+/*-*/
+/* line 655, base/move.scss */
+.mov-text08 { animation-name: mov-text08; -webkit-animation-name: mov-text08; -moz-animation-name: mov-text08; -o-animation-name: mov-text08; animation-duration: 6.1s; -webkit-animation-duration: 6.1s; -moz-animation-duration: 6.1s; -o-animation-duration: 6.1s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-text08 { /* line 662, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 663, base/move.scss */
+  99% { opacity: 0.0; }
+  /* line 664, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-text08 { /* line 667, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 668, base/move.scss */
+  99% { opacity: 0.0; }
+  /* line 669, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-text08 { /* line 672, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 673, base/move.scss */
+  99% { opacity: 0.0; }
+  /* line 674, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-text08 { /* line 677, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 678, base/move.scss */
+  99% { opacity: 0.0; }
+  /* line 679, base/move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 685, base/move.scss */
+.mov-gif { animation-name: mov-gif; -webkit-animation-name: mov-gif; -moz-animation-name: mov-gif; -o-animation-name: mov-gif; animation-duration: 8.2s; -webkit-animation-duration: 8.2s; -moz-animation-duration: 8.2s; -o-animation-duration: 8.2s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-gif { /* line 692, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 693, base/move.scss */
+  90% { opacity: 0.0; }
+  /* line 694, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-gif { /* line 697, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 698, base/move.scss */
+  90% { opacity: 0.0; }
+  /* line 699, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-gif { /* line 702, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 703, base/move.scss */
+  90% { opacity: 0.0; }
+  /* line 704, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-gif { /* line 707, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 708, base/move.scss */
+  90% { opacity: 0.0; }
+  /* line 709, base/move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 716, base/move.scss */
+.mov-text09 { animation-name: mov-text09; -webkit-animation-name: mov-text09; -moz-animation-name: mov-text09; -o-animation-name: mov-text09; animation-duration: 9s; -webkit-animation-duration: 9s; -moz-animation-duration: 9s; -o-animation-duration: 9s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-text09 { /* line 723, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 724, base/move.scss */
+  90% { opacity: 0.0; }
+  /* line 725, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-text09 { /* line 728, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 729, base/move.scss */
+  90% { opacity: 0.0; }
+  /* line 730, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-text09 { /* line 733, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 734, base/move.scss */
+  90% { opacity: 0.0; }
+  /* line 735, base/move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-text09 { /* line 738, base/move.scss */
+  0% { opacity: 0.0; }
+  /* line 739, base/move.scss */
+  90% { opacity: 0.0; }
+  /* line 740, base/move.scss */
+  100% { opacity: 1.0; } }
+
+/*--| Modules
+-------------------------------------------------------------------------- |--*/
+/* line 1, modules/header.scss */
+.main-header { width: 100%; height: 80px; position: fixed; top: -80px; background: url(../../img/front/header.png) no-repeat 0px 0px; z-index: 90909090909090909090909999; -webkit-transition: all 0.7s ease-in-out; -moz-transition: all 0.7s ease-in-out; -ms-transition: all 0.7s ease-in-out; -o-transition: all 0.7s ease-in-out; transition: all 0.7s ease-in-out; }
+
+/* line 14, modules/header.scss */
+.hmov { top: 0px; z-index: 909090909090909090909099; }
+
+/* line 16, modules/header.scss */
+.main-header ul { width: 720px; height: 80px; float: right; background: url(../../img/front/menu2.png) no-repeat 0px 0px; }
+
+/* line 23, modules/header.scss */
+.main-header ul li { width: 50px; height: 20px; cursor: pointer; margin: 21px 20px 0px 0px; float: left; }
+
+/* line 31, modules/header.scss */
+.main-header ul li.b00 { margin-left: 656px; width: 50px; }
+
+/*.main-header ul li.b01 {margin-left: 6px; width: 67px;}*/
+/*.main-header ul li.b02 {margin-left: 6px; width: 86px;}
+.main-header ul li.b03 {margin-left: 6px; width: 54px;}
+.main-header ul li.b04 {margin-left: 8px; width: 50px;}
+.main-header ul li.b05 {margin-left: 8px; width: 71px;}*/
+/*--| Modal
+-------------------------------------------------------------------------- |--*/
+/* line 4, modules/modal.scss */
+.modal { overflow: hidden; width: 100%; height: 100%; top: 0; left: 0; position: fixed; z-index: 90909090909090909090909090909090; background-color: rgba(0, 0, 0, 0); -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; }
+
+/* line 19, modules/modal.scss */
+.modalbody { width: 500px; height: auto; min-height: 20px; overflow: hidden; background-color: #fff; position: absolute; top: 20px; left: 50%; box-sizing: border-box; padding: 50px 50px 50px 50px; margin: 0px 0px 0px -250px; -webkit-box-shadow: 5px 5px 0px rgba(0, 0, 0, 0); -moz-box-shadow: 5px 5px 0px rgba(0, 0, 0, 0); box-shadow: 5px 5px 0px rgba(0, 0, 0, 0); }
+
+/* line 36, modules/modal.scss */
+.modalbody .close { width: 20px; height: 20px; margin: -40px 0px 0px 415px; position: absolute; cursor: pointer; }
+
+/* line 43, modules/modal.scss */
+.modalbody .close:before { font-family: 'aw'; font-size: 2em; content: "\f057"; margin: 2px 0px 0px 5px; vertical-align: text-top; color: #143d66; }
+
+/* line 52, modules/modal.scss */
+.modalbody p { font-size: 1.6em; line-height: 1.5em; color: #143d66; font-weight: normal; font-family: 'Asap', Arial, Helvetica, sans-serif; }
+
+/* line 57, modules/modal.scss */
+.blur { -webkit-filter: blur(3px); -webkit-transition: -webkit-filter .50s; }
+
+/* line 1, modules/footer.scss */
+footer { z-index: 909090909090909090909099; width: 100%; height: 50px; position: absolute; bottom: -50px; /*bottom: 0px;*/ background-color: rgba(0, 0, 0, 0); -webkit-transition: all 0.7s ease-in-out; -moz-transition: all 0.7s ease-in-out; -ms-transition: all 0.7s ease-in-out; -o-transition: all 0.7s ease-in-out; transition: all 0.7s ease-in-out; }
+
+/* line 15, modules/footer.scss */
+.fmov { bottom: 0px; }
+
+/*.footer-wrapper {float: left; width: 100%; overflow: hidden;}*/
+/* line 19, modules/footer.scss */
+.footer1 { height: 50px; width: 970px; float: left; }
+
+/* line 25, modules/footer.scss */
+.footer1 .slider1 { width: 940px; height: 30px; margin: 10px 0px 0px 15px; overflow: hidden; }
+
+/* line 32, modules/footer.scss */
+.footer1 .slider1 .logos { width: 940px; height: 30px; overflow: hidden; }
+
+/* line 38, modules/footer.scss */
+.footer1 .slider1 .logos .logo a { float: left; width: 100px; height: 30px; margin: 0px 15px 0px 15px; }
+
+/* line 45, modules/footer.scss */
+.footer2 { float: right; height: 50px; width: 377px; font-size: 1em; line-height: 50px; color: rgba(255, 255, 255, 0); font-weight: normal; font-family: 'Open Sans', Arial, Helvetica, sans-serif; text-align: right; margin: 0px 10px 0px 0px; }
+
+/* line 54, modules/footer.scss */
+.footer2 a { color: rgba(255, 255, 255, 0); }
+
+/* line 56, modules/footer.scss */
+.footer1 .slider1 .logos .logo.lesmots a { background: url(../../img/front/dummys/logos/lesmots.png) no-repeat 0px 0px; }
+
+/* line 57, modules/footer.scss */
+.footer1 .slider1 .logos .logo.subrayado a { background: url(../../img/front/dummys/logos/subrayado.png) no-repeat 0px 0px; }
+
+/* line 58, modules/footer.scss */
+.footer1 .slider1 .logos .logo.sovieticode a { background: url(../../img/front/dummys/logos/sovieticode.png) no-repeat 0px 0px; }
+
+/* line 59, modules/footer.scss */
+.footer1 .slider1 .logos .logo.vito a { background: url(../../img/front/dummys/logos/vito.png) no-repeat 0px 0px; }
+
+/* line 60, modules/footer.scss */
+.footer1 .slider1 .logos .logo.makeit a { background: url(../../img/front/dummys/logos/makeit.png) no-repeat 0px 0px; }
+
+/* line 61, modules/footer.scss */
+.footer1 .slider1 .logos .logo.cativelli a { background: url(../../img/front/dummys/logos/cattivelli.png) no-repeat 0px 0px; }
+
+/* line 62, modules/footer.scss */
+.footer1 .slider1 .logos .logo.living a { background: url(../../img/front/dummys/logos/living.png) no-repeat 0px 0px; }
+
+/* line 63, modules/footer.scss */
+.footer1 .slider1 .logos .logo.casitanno a { background: url(../../img/front/dummys/logos/casitanno.png) no-repeat 0px 0px; }
+
+/* line 64, modules/footer.scss */
+.footer1 .slider1 .logos .logo.fernet a { background: url(../../img/front/dummys/logos/fernet.png) no-repeat 0px 0px; }
+
+/* line 65, modules/footer.scss */
+.footer1 .slider1 .logos .logo.miller a { background: url(../../img/front/dummys/logos/miller.png) no-repeat 0px 0px; }
+
+/* line 66, modules/footer.scss */
+.footer1 .slider1 .logos .logo.natalia a { background: url(../../img/front/dummys/logos/natalia.png) no-repeat 0px 0px; }
+
+/* line 67, modules/footer.scss */
+.footer1 .slider1 .logos .logo.boton a { background: url(../../img/front/dummys/logos/boton.png) no-repeat 0px 0px; }
+
+/* line 68, modules/footer.scss */
+.footer1 .slider1 .logos .logo.tweet a { background: url(../../img/front/dummys/logos/tweet.png) no-repeat 0px 0px; }
+
+/* line 69, modules/footer.scss */
+.footer1 .slider1 .logos .logo.blog a { background: url(../../img/front/dummys/logos/blog.png) no-repeat 0px 0px; }
+
+/* line 70, modules/footer.scss */
+.footer1 .slider1 .logos .logo.ataque a { background: url(../../img/front/dummys/logos/ataque.png) no-repeat 0px 0px; }
+
+/* line 71, modules/footer.scss */
+.footer1 .slider1 .logos .logo.justicia a { background: url(../../img/front/dummys/logos/justicia.png) no-repeat 0px 0px; }
+
+/* line 72, modules/footer.scss */
+.footer1 .slider1 .logos .logo.candilejas a { background: url(../../img/front/dummys/logos/candilejas.png) no-repeat 0px 0px; }
+
+/* line 73, modules/footer.scss */
+.footer1 .slider1 .logos .logo.petates a { background: url(../../img/front/dummys/logos/petates.png) no-repeat 0px 0px; }
+
+/* line 74, modules/footer.scss */
+.footer1 .slider1 .logos .logo.amareto a { background: url(../../img/front/dummys/logos/amaret.png) no-repeat 0px 0px; }
+
+/*--| Commons
+-------------------------------------------------------------------------- |--*/
+/* line 4, modules/common.scss */
+.wrapper .cabezal { width: 100%; width: px; height: auto; min-height: 20px; overflow: hidden; height: 270px; box-sizing: border-box; overflow: hidden; border-bottom: 1px solid rgba(255, 255, 255, 0); }
+
+/* line 16, modules/common.scss */
+.wrapper .cabezal h3 { float: left; width: 40%; height: 270px; font-size: 10em; line-height: 235px; color: rgba(255, 255, 255, 0); font-weight: normal; font-family: 'pre', Arial, Helvetica, sans-serif; text-align: center; letter-spacing: -2px; }
+
+/* line 26, modules/common.scss */
+.wrapper .cabezal article { display: block; float: left; height: 245px; width: 54%; margin: 0px 0px 20px 2%; overflow: hidden; box-sizing: border-box; background-color: rgba(0, 0, 0, 0); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+
+/* line 40, modules/common.scss */
+.wrapper .cabezal article .slide { overflow: hidden; height: 185px; padding: 30px; }
+
+/* line 46, modules/common.scss */
+.wrapper .cabezal article h4 { font-size: 2em; line-height: 1.5em; color: rgba(255, 255, 255, 0); font-weight: 700; font-family: 'Asap', Arial, Helvetica, sans-serif; margin: 0px 0px 12px 0px; }
+
+/* line 52, modules/common.scss */
+.wrapper .cabezal article p { width: 95%; font-size: 1.5em; line-height: 1.5em; color: rgba(255, 255, 255, 0); font-weight: normal; font-family: 'Asap', Arial, Helvetica, sans-serif; margin: 0px 0px 0.75em 10px; }
+
+/* line 58, modules/common.scss */
+.wrapper .cabezal article p a { -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -ms-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; color: rgba(255, 255, 255, 0); border-bottom: 1px solid rgba(255, 255, 255, 0); }
+
+/* line 67, modules/common.scss */
+.wrapper .cabezal article p a:hover { color: #2e6399; background-color: rgba(255, 255, 255, 0); }
+
+/* line 72, modules/common.scss */
+.wrapper .cabezal article p:before { font-family: 'aw'; font-size: 0.3em; content: "\f111"; margin: -2px 5px 0px 0px; vertical-align: text-top; display: inline-block; }
+
+/* line 81, modules/common.scss */
+.wrapper .cabezal article p i:before { font-family: 'aw'; font-size: 0.9em; content: "\f138"; margin: 2px 2px 0px 2px; vertical-align: text-top; display: inline-block; }
+
+/* line 91, modules/common.scss */
+.wrapper .cabezal .next, .wrapper .cabezal .prev { width: 30px; height: 30px; margin: 105px 0px 0px 39%; display: block; position: absolute; z-index: 1200909090909909090909090; }
+
+/* line 99, modules/common.scss */
+.wrapper .cabezal .next { margin: 105px 0px 0px 95.4%; }
+
+/* line 102, modules/common.scss */
+.wrapper .cabezal .next:before, .wrapper .cabezal .prev:before { font-family: 'aw'; font-size: 3em; content: "\f138"; margin: 0px 0px 0px 0px; display: inline-block; color: rgba(255, 255, 255, 0); }
+
+/* line 110, modules/common.scss */
+.wrapper .cabezal .prev:before { content: "\f137"; }
+
+/*--| Modules
+-------------------------------------------------------------------------- |--*/
+/*-*/
+/*Columna izquierda fluida*/
+/*.footer-wrapper {float: left; width: 100%; overflow: hidden;}
+
+.footer1 { height: 50px; margin-right: 350px; overflow: hidden; background: #ff9900 url(../../img/front/footer1.png) no-repeat 0px 0px; }
+
+.footer1 .slideshow { width: 95%; height: 30px; background-color: #21a656; margin: 10px 0px 0px 15px; overflow: hidden; }
+
+.footer1 .slide1 li a { display: block; width: 100px; height: 30px; margin: 0px 15px 0px 15px; background-color: #8b21a6; float: left; }*/
+/*.contenido h3 { font: 700 4em/1.5em 'Asap', Arial, Helvetica, sans-serif; color: rgba(256, 256, 256, 0.55); margin: 0px 0px 0px 0px;
+}
+.contenido h4 { font: 700 2em/1.5em 'Asap', Arial, Helvetica, sans-serif; color: rgba(256, 256, 256, 0.60); margin: 0px 0px 0px 10px;
+}
+
+
+.tl { width: 375px; height: 235px; position: absolute; z-index: 20; margin: 320px 0px 0px 214px; }
+
+.a00 ul { width: 345px; height: 455px;  margin: 33px 0px 0px 655px; position: absolute; z-index: 20; }
+
+.a00 ul li { cursor: pointer; width: 345px; height: 45px; margin: 0px 0px 10px 0px; background-color: #8b21a6; opacity: .7;
+}
+
+.a00 ul li.b02 {margin: 0px 0px 255px 0px;}*/
+/*--| Body, tipografías, esétera
+-------------------------------------------------------------------------- |--*/
+/*--| Content
+---------------------------------------------------------------------------------------------- |--*/
+/* line 114, site/01-home.scss */
+.content { width: 960px; height: 500px; position: absolute; left: 50%; top: 50%; margin: -265px 0px 0px -480px; /*background-color: rgba(0, 0, 0, 0.65);*/ }
+
+/* line 124, site/01-home.scss */
+.content h1, .content h2, .content h3 { font-size: 0; }
+
+/* line 126, site/01-home.scss */
+.content .imago { width: 200px; height: 210px; position: absolute; margin: 28px 0px 0px 0px; z-index: 10; background: url(../../img/front/imago.png) no-repeat 0px 0px; }
+
+/* line 135, site/01-home.scss */
+.content h1 { width: 590px; height: 210px; position: absolute; margin: 28px 0px 0px 0px; background: url(../../img/front/logo2.png) no-repeat 0px 0px; }
+
+/* line 143, site/01-home.scss */
+.content h3 { width: 231px; height: 25px; position: absolute; margin: 119px 0px 0px 700px; opacity: 0.95; background: url(../../img/front/sabado.png) no-repeat 0px 0px; }
+
+/* line 152, site/01-home.scss */
+.content .line01, .content .line02, .content .line03 { background-color: rgba(20, 143, 204, 0); position: absolute; }
+
+/* line 157, site/01-home.scss */
+.content .line01 { width: 90px; height: 1px; margin: 135px 0px 0px 599px; }
+
+/* line 163, site/01-home.scss */
+.content .line02 { width: 1px; height: 72px; margin: 211px 0px 0px 507px; }
+
+/* line 169, site/01-home.scss */
+.content p { position: absolute; display: block; margin: 302px 0px 0px 474px; font-size: 1.5em; line-height: 30px; color: rgba(20, 143, 204, 0); font-weight: normal; font-family: 'Asap', Arial, Helvetica, sans-serif; }
+
+/* line 177, site/01-home.scss */
+.content p a { display: inline-block; padding: 0px 15px 0px 10px; height: 30px; background-color: #148fcc; opacity: .94; color: #fff; font-weight: 700; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; margin: 0px 0px 0px 10px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+
+/* line 196, site/01-home.scss */
+.content p.pri { font-size: 2em; line-height: 45px; color: rgba(20, 143, 204, 0); font-weight: 700; font-family: 'Asap', Arial, Helvetica, sans-serif; }
+
+/* line 200, site/01-home.scss */
+.content p.pri a { height: 45px; padding: 0px 20px 0px 15px; background-color: #cc1414; }
+
+/* line 201, site/01-home.scss */
+.content p a:hover { opacity: 1; -webkit-box-shadow: 2px 2px 0px rgba(0, 0, 0, 0); -moz-box-shadow: 2px 2px 0px rgba(0, 0, 0, 0); box-shadow: 2px 2px 0px rgba(0, 0, 0, 0); }
+
+/* line 207, site/01-home.scss */
+.content p.pri a:before { font-family: 'aw'; font-size: 0.9em; margin: -2px 8px 0px 0px; vertical-align: middle; content: "\f061"; display: inline-block; }
+
+/* line 215, site/01-home.scss */
+.content p a:active { opacity: 1; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+
+/* line 222, site/01-home.scss */
+.content p.last { margin: 440px 0px 0px 245px; }
+
+/* line 223, site/01-home.scss */
+.content p.sec { margin: 402px 0px 0px 363px; }
+
+/* line 224, site/01-home.scss */
+.content p.bre { margin: 360px 0px 0px 243px; }
+
+/* line 225, site/01-home.scss */
+.content p.last02 { margin: 443px 0px 0px 296px; }
+
+/* line 227, site/01-home.scss */
+.content .social { width: 90px; height: 50px; position: absolute; margin: 211px 0px 0px 792px; }
+
+/* line 234, site/01-home.scss */
+.content .social .fb, .content .social .tw { width: 90px; height: 25px; }
+
+/* line 239, site/01-home.scss */
+.content .line03 { width: 1px; height: 36px; margin: 158px 0px 0px 807px; background-color: rgba(20, 143, 204, 0); position: absolute; }
+
+/* line 247, site/01-home.scss */
+.mobile-lay { width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 90909090909090909090909090000090000000000; background-color: rgba(255, 255, 255, 0); }
+
+/* line 256, site/01-home.scss */
+.mobile { display: none; width: 300px; height: 400px; margin: 0px 0px 0px 0px; background-color: #8b21a6; background: url(../../img/front/cel.jpg) no-repeat 0px 0px; position: fixed; top: 10px; left: 10px; cursor: pointer; }
+
+/*--| 1· Votación
+-------------------------------------------------------------------------- |--*/
+/* line 4, site/02-votacion.scss */
+.categorias { height: auto; min-height: 20px; overflow: hidden; margin: 28px 0px 50px 0px; }
+
+/* line 11, site/02-votacion.scss */
+.categorias li { width: 290px; height: 410px; margin: 18px; background-color: #8b21a6; float: left; background: url(../../img/front/sprite.png) no-repeat 0px -120px; }
+
+/* line 20, site/02-votacion.scss */
+.categorias li .cabezal { width: 250px; height: 78px; margin: 48px 0px 0px 12px; }
+
+/* line 26, site/02-votacion.scss */
+.categorias li .cat { width: 65px; height: 65px; margin: 0px 0px 0px 0px; float: left; overflow: hidden; }
+
+/* line 34, site/02-votacion.scss */
+.categorias li h5 { width: 173px; font-size: 2.1em; line-height: 1.2em; color: #fff; font-weight: 700; font-family: 'Asap', Arial, Helvetica, sans-serif; display: block; float: left; margin: 8px 0px 0px 10px; }
+
+/* line 43, site/02-votacion.scss */
+.categorias li p { font-size: 1.3em; line-height: 1.35em; color: #324d17; font-weight: normal; font-family: 'Asap', Arial, Helvetica, sans-serif; margin: 20px 0px 0px 37px; width: 220px; height: 95px; }
+
+/* line 50, site/02-votacion.scss */
+.categorias li p a { font-weight: 700; color: #21330f; }
+
+/* line 51, site/02-votacion.scss */
+.categorias li p a:hover { color: #080d04; }
+
+@-moz-document url-prefix() { /* line 53, site/02-votacion.scss */
+  .categorias li p { margin: 10px 0px 0px 37px; } }
+
+/* line 55, site/02-votacion.scss */
+.categorias li .sponsor { width: 235px; height: 70px; margin: 18px 0px 11px 30px; }
+
+@-moz-document url-prefix() { /* line 61, site/02-votacion.scss */
+  .categorias li .sponsor { margin: 24px 0px 14px 30px; } }
+
+/* line 63, site/02-votacion.scss */
+.categorias li .vota a { display: block; width: 75px; height: 40px; margin: 0px 0px 0px 215px; background-color: #6ca632; font-size: 2.1em; line-height: 40px; color: #fff; font-weight: 700; font-family: 'Asap', Arial, Helvetica, sans-serif; text-transform: uppercase; text-align: center; -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -ms-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
+
+/* line 79, site/02-votacion.scss */
+.categorias li .vota a:hover { background-color: #5b8c2a; }
+
+/* line 80, site/02-votacion.scss */
+.categorias li .vota a:active { background-color: #42661f; }
+
+/*--| 5· Tienda
+-------------------------------------------------------------------------- |--*/
+/* line 4, site/06-tienda.scss */
+.tienda nav { margin: 30px 0px 30px 0px; width: 100%; height: 90px; overflow: hidden; padding: 0px 0px 20px 0px; }
+
+/*--| Menú
+--------------------------------- |--*/
+/* line 17, site/06-tienda.scss */
+.tienda nav ul { overflow: hidden; height: 120px; width: auto; margin: 0px 0px 0px 0px; }
+
+/* line 24, site/06-tienda.scss */
+.tienda nav ul li { cursor: pointer; width: 12.5%; height: 120px; float: left; font-size: 1.6em; line-height: 1.5em; color: rgba(255, 255, 255, 0); font-weight: 700; font-family: 'Asap', Arial, Helvetica, sans-serif; text-transform: uppercase; text-align: center; text-shadow: 1px 1px rgba(0, 0, 0, 0); -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+
+/* line 41, site/06-tienda.scss */
+.tienda nav ul li:before { -webkit-box-shadow: 2px 2px 0px rgba(0, 0, 0, 0); -moz-box-shadow: 2px 2px 0px rgba(0, 0, 0, 0); box-shadow: 2px 2px 0px rgba(0, 0, 0, 0); font-family: 'aw'; content: ""; margin: 10px auto 8px auto; vertical-align: text-top; display: block; width: 60px; height: 60px; background-color: #1f5c99; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; }
+
+/* line 63, site/06-tienda.scss */
+.tienda nav ul li:hover:before, .tienda nav ul li.active:before { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+
+/* line 68, site/06-tienda.scss */
+.tienda nav ul li.autoadhesivos:before { background: #1f5c99 url(../../img/front/sprite.png) no-repeat 0px 0px; }
+
+/* line 69, site/06-tienda.scss */
+.tienda nav ul li.cuadernolas:before { background: #1f5c99 url(../../img/front/sprite.png) no-repeat -60px 0px; }
+
+/* line 70, site/06-tienda.scss */
+.tienda nav ul li.lapices:before { background: #1f5c99 url(../../img/front/sprite.png) no-repeat -120px 0px; }
+
+/* line 71, site/06-tienda.scss */
+.tienda nav ul li.pins:before { background: #1f5c99 url(../../img/front/sprite.png) no-repeat -180px 0px; }
+
+/* line 72, site/06-tienda.scss */
+.tienda nav ul li.remeras:before { background: #1f5c99 url(../../img/front/sprite.png) no-repeat 0px -60px; }
+
+/* line 73, site/06-tienda.scss */
+.tienda nav ul li.tazas:before { background: #1f5c99 url(../../img/front/sprite.png) no-repeat -60px -60px; }
+
+/* line 74, site/06-tienda.scss */
+.tienda nav ul li.combos:before { background: #1f5c99 url(../../img/front/sprite.png) no-repeat -120px -60px; }
+
+/* line 75, site/06-tienda.scss */
+.tienda nav ul li.todos:before { background: #1f5c99 url(../../img/front/sprite.png) no-repeat -180px -60px; }
+
+/* line 77, site/06-tienda.scss */
+.tienda nav ul li.autoadhesivos:hover:before, .tienda nav ul li.active.autoadhesivos:before { background: #143d66 url(../../img/front/sprite.png) no-repeat 0px 0px; }
+
+/* line 78, site/06-tienda.scss */
+.tienda nav ul li.cuadernolas:hover:before, .tienda nav ul li.active.cuadernolas:before { background: #143d66 url(../../img/front/sprite.png) no-repeat -60px 0px; }
+
+/* line 79, site/06-tienda.scss */
+.tienda nav ul li.lapices:hover:before, .tienda nav ul li.active.lapices:before { background: #143d66 url(../../img/front/sprite.png) no-repeat -120px 0px; }
+
+/* line 80, site/06-tienda.scss */
+.tienda nav ul li.pins:hover:before, .tienda nav ul li.active.pins:before { background: #143d66 url(../../img/front/sprite.png) no-repeat -180px 0px; }
+
+/* line 81, site/06-tienda.scss */
+.tienda nav ul li.remeras:hover:before, .tienda nav ul li.active.remeras:before { background: #143d66 url(../../img/front/sprite.png) no-repeat 0px -60px; }
+
+/* line 82, site/06-tienda.scss */
+.tienda nav ul li.tazas:hover:before, .tienda nav ul li.active.tazas:before { background: #143d66 url(../../img/front/sprite.png) no-repeat -60px -60px; }
+
+/* line 83, site/06-tienda.scss */
+.tienda nav ul li.combos:hover:before, .tienda nav ul li.active.combos:before { background: #143d66 url(../../img/front/sprite.png) no-repeat -120px -60px; }
+
+/* line 84, site/06-tienda.scss */
+.tienda nav ul li.todos:hover:before, .tienda nav ul li.active.todos:before { background: #143d66 url(../../img/front/sprite.png) no-repeat -180px -60px; }
+
+/*--| Listado de Productos
+--------------------------------- |--*/
+/* line 91, site/06-tienda.scss */
+.tienda .listado ul { width: 100%; height: auto; min-height: 20px; overflow: hidden; margin: 0px 0px 0px 0px; }
+
+/* line 99, site/06-tienda.scss */
+.tienda .listado ul li { width: 235px; height: 415px; overflow: hidden; margin: 0px 13px 61px 13px; }
+
+/* line 106, site/06-tienda.scss */
+.tienda .listado ul li .top { width: 225px; height: 35px; margin: 0px 0px 0px 0px; background: url(../../img/front/sprite.png) no-repeat -290px 0px; }
+
+/* line 113, site/06-tienda.scss */
+.tienda .listado ul li .etiqueta { width: 225px; height: 355px; background-color: #fff; margin: 0px 0px 10px 0px; padding: 10px 0px 0px 0px; -webkit-border-bottom-right-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; -webkit-box-shadow: 5px 5px 0px rgba(0, 0, 0, 0); -moz-box-shadow: 5px 5px 0px rgba(0, 0, 0, 0); box-shadow: 5px 5px 0px rgba(0, 0, 0, 0); }
+
+/* line 130, site/06-tienda.scss */
+.tienda .listado ul li figure { overflow: hidden; width: 175px; height: 175px; border: 5px solid #1f5c99; margin: 10px 0px 0px 20px; -webkit-border-radius: 96px; -moz-border-radius: 96px; border-radius: 96px; }
+
+/* line 141, site/06-tienda.scss */
+.tienda .listado ul li figure img { width: 175px; height: 175px; -webkit-border-radius: 87px; -moz-border-radius: 87px; border-radius: 87px; }
+
+/* line 149, site/06-tienda.scss */
+.tienda .listado ul li h4 { width: 185px; height: 75px; margin: 10px 0px 5px 20px; font-size: 1.8em; line-height: 1.25em; color: #1f5c99; font-weight: 700; font-family: 'Asap', Arial, Helvetica, sans-serif; text-transform: uppercase; text-align: center; overflow: hidden; }
+
+/* line 160, site/06-tienda.scss */
+.tienda .listado ul li .preciogo { width: 220px; height: 40px; margin: 0px 0px 0px 20px; background-color: #1a4d80; -webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0); -moz-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0); box-shadow: 3px 3px 0px rgba(0, 0, 0, 0); }
+
+/* line 170, site/06-tienda.scss */
+.tienda .listado ul li .preciogo .precio { float: left; width: 65px; height: 40px; box-sizing: border-box; text-align: center; background-color: #143d66; font-size: 1.7em; line-height: 40px; color: rgba(255, 255, 255, 0); font-weight: 700; font-family: 'Asap', Arial, Helvetica, sans-serif; border-right: 1px solid rgba(255, 255, 255, 0); }
+
+/* line 181, site/06-tienda.scss */
+.tienda .listado ul li .preciogo .precio span { padding: 0px 2px 0px 0px; }
+
+/* line 183, site/06-tienda.scss */
+.tienda .listado ul li .go .comprar { width: 100px; height: 40px; float: left; font-size: 1.7em; line-height: 40px; color: rgba(255, 255, 255, 0); font-weight: 700; font-family: 'Asap', Arial, Helvetica, sans-serif; text-align: center; border: none; background-color: #1f5c99; margin: 0px 0px 0px 9px; cursor: pointer; box-sizing: border-box; border-left: 1px solid rgba(255, 255, 255, 0); -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -ms-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
+
+/* line 202, site/06-tienda.scss */
+.tienda .listado ul li .go .comprar:hover { background-color: #143d66; }
+
+@-moz-document url-prefix() { /* line 204, site/06-tienda.scss */
+  .tienda .listado ul li .go .comprar { height: 38px; margin: 0px 0px 0px 8px; } }
+
+/* line 206, site/06-tienda.scss */
+.tienda .listado ul li .go select { width: 35px; float: left; margin: 9px 0px 0px 10px; }
+
+/* line 212, site/06-tienda.scss */
+.tienda .listado ul li .comprado { width: 50px; height: 85px; margin: 0px 0px 0px 180px; background-color: #8b21a6; position: absolute; z-index: 20; background: url(../../img/front/sprite.png) no-repeat -240px 0px; }
+
+/* line 222, site/06-tienda.scss */
+#Grid .mix { opacity: 0; display: none; }
+
+/*--| CheckOut - Tabla
+--------------------------------- |--*/
+/* line 233, site/06-tienda.scss */
+.checkout { width: 100%; height: auto; min-height: 20px; overflow: hidden; box-sizing: border-box; padding: 50px 0px 0px 0px; border-top: 1px solid rgba(255, 255, 255, 0); margin: 20px 0px 0px 0px; }
+
+/* line 245, site/06-tienda.scss */
+.checkout .tabla, .checkout .form { width: 45%; height: auto; min-height: 20px; overflow: hidden; float: left; padding: 0px 0px 0px 0px; border-right: 1px solid rgba(255, 255, 255, 0); }
+
+/* line 254, site/06-tienda.scss */
+.checkout .form { padding: 0px 0px 0px 5%; border-right: none; }
+
+/* line 256, site/06-tienda.scss */
+.checkout h5 { margin: 0px 0px 10px 0px; font-size: 2.3em; line-height: 1.5em; color: rgba(255, 255, 255, 0); font-weight: 700; font-family: 'Asap', Arial, Helvetica, sans-serif; }
+
+/* line 262, site/06-tienda.scss */
+.checkout table { height: auto; min-height: 20px; overflow: hidden; margin: 0px 0px 50px 1%; padding: 0px 0px 20px 0px; border-bottom: 1px solid rgba(255, 255, 255, 0); }
+
+/* line 271, site/06-tienda.scss */
+.checkout table tr { border-bottom: 1px solid rgba(255, 255, 255, 0); border-right: 1px solid rgba(255, 255, 255, 0); }
+
+/* line 275, site/06-tienda.scss */
+.checkout table tr:first-child { border-top: 1px solid rgba(255, 255, 255, 0); }
+
+/* line 277, site/06-tienda.scss */
+.checkout table tr td { font-size: 1.5em; line-height: 1.5em; color: rgba(255, 255, 255, 0); font-weight: normal; font-family: 'Asap', Arial, Helvetica, sans-serif; padding: 0px 15px 0px 10px; border-right: 1px solid rgba(255, 255, 255, 0); }
+
+/* line 283, site/06-tienda.scss */
+.checkout table tr td:first-child { border-left: 1px solid rgba(255, 255, 255, 0); }
+
+/* line 285, site/06-tienda.scss */
+.checkout table tr td:first-child, .checkout table tr td:nth-child(4) { text-align: right; }
+
+/* line 286, site/06-tienda.scss */
+.checkout table tr td.delete { text-align: center; cursor: pointer; border-right: 1px solid rgba(255, 255, 255, 0); -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -ms-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
+
+/* line 296, site/06-tienda.scss */
+.checkout table tr td.delete:hover { background-color: #9c1f1f; }
+
+/* line 297, site/06-tienda.scss */
+.checkout table tr td.delete:before { display: inline-block; content: "\f014"; font: normal 1em/40px "aw"; color: rgba(255, 255, 255, 0); }
+
+/* line 305, site/06-tienda.scss */
+.checkout table tfoot tr, .checkout table tfoot tr:nth-child(odd) { background-color: transparent; }
+
+/* line 306, site/06-tienda.scss */
+.checkout table tfoot tr td:first-child { border-left: none; }
+
+/* line 307, site/06-tienda.scss */
+.checkout table tfoot tr td { border-right: none; }
+
+/* line 308, site/06-tienda.scss */
+.checkout table tfoot tr td.total { text-align: right; font-weight: 700; font-size: 1.7em; }
+
+/* line 309, site/06-tienda.scss */
+.checkout table tfoot tr td.precio { border: 1px solid rgba(255, 255, 255, 0); color: #1f5c99; font-weight: 700; font-size: 1.7em; background-color: #fff; padding: 2px 11px 2px 0px; }
+
+/*--| CheckOut - Form
+--------------------------------- |--*/
+/* line 323, site/06-tienda.scss */
+.checkout { width: 100%; height: auto; min-height: 20px; overflow: hidden; margin: 0px 0px 60px 0px; }
+
+/* line 331, site/06-tienda.scss */
+.checkout .form-column { width: 48%; margin: 0px 10px 0px 0px; float: left; }
+
+/* line 333, site/06-tienda.scss */
+.checkout input { width: 100%; height: 40px; padding: 0px 10px 0px 10px; margin: 0px 0px 8px 0px; background-color: rgba(255, 255, 255, 0); box-sizing: border-box; border: 1px solid rgba(255, 255, 255, 0); font-size: 1.5em; line-height: 40px; color: rgba(255, 255, 255, 0); font-weight: normal; font-family: 'Asap', Arial, Helvetica, sans-serif; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+
+/* line 349, site/06-tienda.scss */
+.checkout input:focus { background-color: rgba(255, 255, 255, 0); color: rgba(255, 255, 255, 0); border: 1px solid rgba(31, 92, 153, 0); }
+
+@-moz-document url-prefix() { /* line 355, site/06-tienda.scss */
+  .checkout form input { padding: 0px 0px 0px 0px; } }
+
+/* line 357, site/06-tienda.scss */
+.checkout input::-webkit-input-placeholder { color: rgba(255, 255, 255, 0); }
+
+/* line 358, site/06-tienda.scss */
+.checkout input:-moz-placeholder { color: rgba(255, 255, 255, 0); }
+
+/* line 359, site/06-tienda.scss */
+.checkout input::-moz-placeholder { color: rgba(255, 255, 255, 0); }
+
+/* line 360, site/06-tienda.scss */
+.checkout input:-ms-input-placeholder { color: rgba(255, 255, 255, 0); }
+
+/* line 362, site/06-tienda.scss */
+.checkout textarea { width: 100%; height: 136px; margin: 0px 0px 8px 0px; padding: 10px; box-sizing: border-box; border: 1px solid rgba(255, 255, 255, 0); resize: none; background-color: rgba(255, 255, 255, 0); font-size: 1.5em; line-height: 1.4em; color: rgba(255, 255, 255, 0); font-weight: normal; font-family: 'Asap', Arial, Helvetica, sans-serif; }
+
+/* line 374, site/06-tienda.scss */
+.checkout textarea:focus { background-color: rgba(255, 255, 255, 0); color: rgba(255, 255, 255, 0); border: 1px solid rgba(31, 92, 153, 0); }
+
+@-moz-document url-prefix() { /* line 380, site/06-tienda.scss */
+  .checkout form textarea { padding: 0px 0px 0px 0px; } }
+
+/* line 382, site/06-tienda.scss */
+.checkout .submit { width: 40%; height: 40px; margin: 0px 0px 0px 60%; font-size: 1.6em; line-height: 40px; color: #fff; font-weight: 700; font-family: 'Asap', Arial, Helvetica, sans-serif; background-color: #1f5c99; text-align: center; cursor: pointer; border: none; -webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0); -moz-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0); box-shadow: 3px 3px 0px rgba(0, 0, 0, 0); -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -ms-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
+
+/* line 401, site/06-tienda.scss */
+.checkout .submit:hover { background-color: #143d66; }
+
+/*--| Vendor
+-------------------------------------------------------------------------- |--*/
+/*--| Lightbox
+--------------------------------- |--*/
+/* line 4, vendor/lightbox.scss */
+.lightboxOverlay { position: absolute; top: 0; left: 0; z-index: 9090909090909090; background-color: rgba(116, 179, 64, 0); display: none; }
+
+/* line 13, vendor/lightbox.scss */
+.lightbox { position: absolute; left: 0; width: 100%; z-index: 9090909090909091; }
+
+/* line 20, vendor/lightbox.scss */
+.lightbox .lb-image { display: block; height: auto; }
+
+/* line 22, vendor/lightbox.scss */
+.lb-outerContainer { background-color: #fff; position: relative; *zoom: 1; width: 250px; height: 250px; border: 15px solid #1f5c99; padding: 0px 0px 30px 0px; margin: -30px auto 0px auto; }
+
+/* line 34, vendor/lightbox.scss */
+.lb-outerContainer:after { content: ""; display: table; clear: both; }
+
+/* line 40, vendor/lightbox.scss */
+.lb-loader { position: absolute; top: 43%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+
+/* line 50, vendor/lightbox.scss */
+.lb-cancel { display: block; width: 30px; height: 30px; margin: 0 auto; background: url(../../img/front/lightbox/loader.gif) no-repeat 0px 0px; }
+
+/* line 58, vendor/lightbox.scss */
+.lb-dataContainer { margin: 0 auto; padding-top: 5px; *zoom: 1; width: 100%; }
+
+/* line 65, vendor/lightbox.scss */
+.lb-dataContainer:after { content: ""; display: table; clear: both; }
+
+/* line 71, vendor/lightbox.scss */
+.lb-data .lb-details { width: 430px; float: left; background-color: #1f5c99; margin: -55px 0px 0px -15px; min-height: 50px; height: auto; position: absolute; z-index: 10; padding: 20px 20px 20px 20px; box-sizing: border-box; }
+
+@-moz-document url-prefix() { /* line 84, vendor/lightbox.scss */
+  .lb-data .lb-details { width: 390px; } }
+
+/* line 86, vendor/lightbox.scss */
+.lb-data .lb-caption { font-size: 1.6em; line-height: 1.3em; color: #fff; font-weight: normal; font-family: 'Asap', Arial, Helvetica, sans-serif; text-align: left; }
+
+/* line 92, vendor/lightbox.scss */
+.lb-data .lb-close { display: block; top: -25px; position: absolute; width: 30px; height: 30px; z-index: 40; margin: 0px 0px 0px 380px; background-color: #1f5c99; cursor: pointer; }
+
+/* line 103, vendor/lightbox.scss */
+.lb-data .lb-close:before { font-family: 'aw'; font-size: 1.7em; content: "\f00d"; margin: 0px 0px 0px 7px; vertical-align: text-top; line-height: 30px; color: #fff; display: inline-block; text-align: center; }
+
+/* line 115, vendor/lightbox.scss */
+.lb-number { color: #1f5c99; }
+
+/*--| Scroll
+--------------------------------- |--*/
+/* line 5, vendor/scroll.scss */
+.nano { position: relative; width: 100%; height: 100%; overflow: hidden; }
+
+/* line 12, vendor/scroll.scss */
+.nano > .nano-content { position: absolute; overflow: scroll; overflow-x: hidden; top: 0; right: 0; bottom: 0; left: 0; padding-right: 15px; box-sizing: border-box; }
+
+/* line 21, vendor/scroll.scss */
+.nano > .nano-content:focus { outline: thin dotted; }
+
+/* line 22, vendor/scroll.scss */
+.nano > .nano-content::-webkit-scrollbar { visibility: hidden; }
+
+/* line 23, vendor/scroll.scss */
+.has-scrollbar > .nano-content::-webkit-scrollbar { visibility: visible; }
+
+/* line 25, vendor/scroll.scss */
+.nano > .nano-pane { background-color: rgba(0, 0, 0, 0); position: absolute; width: 10px; right: 0; top: 0; bottom: 0; opacity: .01; margin: 0px 0px 0px 0px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+
+/* line 42, vendor/scroll.scss */
+.nano > .nano-pane > .nano-slider { background-color: #fff; opacity: .87; position: relative; cursor: pointer; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+
+/* line 52, vendor/scroll.scss */
+.nano > .nano-pane:hover > .nano-slider { opacity: 1; }
+
+/* line 53, vendor/scroll.scss */
+.nano:hover > .nano-pane, .nano-pane.active, .nano-pane.flashed { opacity: 0.98; }
+
+/* line 55, vendor/scroll.scss */
+.wrapper, .nano { width: 98%; height: 78%; }

@@ -1,0 +1,799 @@
+/* line 1, move.scss */
+.mov-imago { animation-name: mov-imago; -webkit-animation-name: mov-imago; -moz-animation-name: mov-imago; -o-animation-name: mov-imago; animation-duration: 2.5s; -webkit-animation-duration: 2.5s; -moz-animation-duration: 2.5s; -o-animation-duration: 2.5s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-imago { /* line 8, move.scss */
+  0% { opacity: 0.0; margin-top: -250px; }
+  /* line 9, move.scss */
+  80% { opacity: 0.0; margin-top: -250px; }
+  /* line 10, move.scss */
+  100% { opacity: 1.0; margin-top: 28px; } }
+
+@-moz-keyframes mov-imago { /* line 13, move.scss */
+  0% { opacity: 0.0; margin-top: -250px; }
+  /* line 14, move.scss */
+  80% { opacity: 0.0; margin-top: -250px; }
+  /* line 15, move.scss */
+  100% { opacity: 1.0; margin-top: 28px; } }
+
+@-o-keyframes mov-imago { /* line 18, move.scss */
+  0% { opacity: 0.0; margin-top: -250px; }
+  /* line 19, move.scss */
+  80% { opacity: 0.0; margin-top: -250px; }
+  /* line 20, move.scss */
+  100% { opacity: 1.0; margin-top: 28px; } }
+
+@keyframes mov-imago { /* line 23, move.scss */
+  0% { opacity: 0.0; margin-top: -250px; }
+  /* line 24, move.scss */
+  80% { opacity: 0.0; margin-top: -250px; }
+  /* line 25, move.scss */
+  100% { opacity: 1.0; margin-top: 28px; } }
+
+/*-*/
+/* line 30, move.scss */
+.mov-logo { animation-name: mov-logo; -webkit-animation-name: mov-logo; -moz-animation-name: mov-logo; -o-animation-name: mov-logo; animation-duration: 2.5s; -webkit-animation-duration: 2.5s; -moz-animation-duration: 2.5s; -o-animation-duration: 2.5s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-logo { /* line 37, move.scss */
+  0% { opacity: 0.0; margin-top: 200px; }
+  /* line 38, move.scss */
+  80% { opacity: 0.0; margin-top: 200px; }
+  /* line 39, move.scss */
+  100% { opacity: 1.0; margin-top: 28px; } }
+
+@-moz-keyframes mov-logo { /* line 42, move.scss */
+  0% { opacity: 0.0; margin-top: 200px; }
+  /* line 43, move.scss */
+  80% { opacity: 0.0; margin-top: 200px; }
+  /* line 44, move.scss */
+  100% { opacity: 1.0; margin-top: 28px; } }
+
+@-o-keyframes mov-logo { /* line 47, move.scss */
+  0% { opacity: 0.0; margin-top: 200px; }
+  /* line 48, move.scss */
+  80% { opacity: 0.0; margin-top: 200px; }
+  /* line 49, move.scss */
+  100% { opacity: 1.0; margin-top: 28px; } }
+
+@keyframes mov-logo { /* line 52, move.scss */
+  0% { opacity: 0.0; margin-top: 200px; }
+  /* line 53, move.scss */
+  80% { opacity: 0.0; margin-top: 200px; }
+  /* line 54, move.scss */
+  100% { opacity: 1.0; margin-top: 28px; } }
+
+/*-*/
+/* line 60, move.scss */
+.mov-line01 { animation-name: mov-line01; -webkit-animation-name: mov-line01; -moz-animation-name: mov-line01; -o-animation-name: mov-line01; animation-duration: 2.8s; -webkit-animation-duration: 2.8s; -moz-animation-duration: 2.8s; -o-animation-duration: 2.8s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-line01 { /* line 67, move.scss */
+  0% { opacity: 0.0; width: 0px; }
+  /* line 68, move.scss */
+  96% { opacity: 0.0; width: 0px; }
+  /* line 69, move.scss */
+  100% { opacity: 1.0; width: 90px; } }
+
+@-moz-keyframes mov-line01 { /* line 72, move.scss */
+  0% { opacity: 0.0; width: 0px; }
+  /* line 73, move.scss */
+  96% { opacity: 0.0; width: 0px; }
+  /* line 74, move.scss */
+  100% { opacity: 1.0; width: 90px; } }
+
+@-o-keyframes mov-line01 { /* line 77, move.scss */
+  0% { opacity: 0.0; width: 0px; }
+  /* line 78, move.scss */
+  96% { opacity: 0.0; width: 0px; }
+  /* line 79, move.scss */
+  100% { opacity: 1.0; width: 90px; } }
+
+@keyframes mov-line01 { /* line 82, move.scss */
+  0% { opacity: 0.0; width: 0px; }
+  /* line 83, move.scss */
+  96% { opacity: 0.0; width: 0px; }
+  /* line 84, move.scss */
+  100% { opacity: 1.0; width: 90px; } }
+
+/*-*/
+/* line 90, move.scss */
+.mov-fecha { animation-name: mov-fecha; -webkit-animation-name: mov-fecha; -moz-animation-name: mov-fecha; -o-animation-name: mov-fecha; animation-duration: 3.2s; -webkit-animation-duration: 3.2s; -moz-animation-duration: 3.2s; -o-animation-duration: 3.2s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-fecha { /* line 97, move.scss */
+  0% { opacity: 0.0; margin-top: 80px; }
+  /* line 98, move.scss */
+  90% { opacity: 0.0; margin-top: 80px; }
+  /* line 99, move.scss */
+  100% { opacity: 1.0; margin-top: 119px; } }
+
+@-moz-keyframes mov-fecha { /* line 102, move.scss */
+  0% { opacity: 0.0; margin-top: 80px; }
+  /* line 103, move.scss */
+  90% { opacity: 0.0; margin-top: 80px; }
+  /* line 104, move.scss */
+  100% { opacity: 1.0; margin-top: 119px; } }
+
+@-o-keyframes mov-fecha { /* line 107, move.scss */
+  0% { opacity: 0.0; margin-top: 80px; }
+  /* line 108, move.scss */
+  90% { opacity: 0.0; margin-top: 80px; }
+  /* line 109, move.scss */
+  100% { opacity: 1.0; margin-top: 119px; } }
+
+@keyframes mov-fecha { /* line 112, move.scss */
+  0% { opacity: 0.0; margin-top: 80px; }
+  /* line 113, move.scss */
+  90% { opacity: 0.0; margin-top: 80px; }
+  /* line 114, move.scss */
+  100% { opacity: 1.0; margin-top: 119px; } }
+
+/*-*/
+/* line 119, move.scss */
+.mov-line02 { animation-name: mov-line02; -webkit-animation-name: mov-line02; -moz-animation-name: mov-line02; -o-animation-name: mov-line02; animation-duration: 4s; -webkit-animation-duration: 4s; -moz-animation-duration: 4s; -o-animation-duration: 4s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-line02 { /* line 126, move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 127, move.scss */
+  95% { opacity: 0.0; height: 0px; }
+  /* line 128, move.scss */
+  100% { opacity: 1.0; height: 72px; } }
+
+@-moz-keyframes mov-line02 { /* line 131, move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 132, move.scss */
+  95% { opacity: 0.0; height: 0px; }
+  /* line 133, move.scss */
+  100% { opacity: 1.0; height: 72px; } }
+
+@-o-keyframes mov-line02 { /* line 136, move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 137, move.scss */
+  95% { opacity: 0.0; height: 0px; }
+  /* line 138, move.scss */
+  100% { opacity: 1.0; height: 72px; } }
+
+@keyframes mov-line02 { /* line 141, move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 142, move.scss */
+  95% { opacity: 0.0; height: 0px; }
+  /* line 143, move.scss */
+  100% { opacity: 1.0; height: 72px; } }
+
+/*-*/
+/* line 148, move.scss */
+.mov-line03 { animation-name: mov-line03; -webkit-animation-name: mov-line03; -moz-animation-name: mov-line03; -o-animation-name: mov-line03; animation-duration: 5.3s; -webkit-animation-duration: 5.3s; -moz-animation-duration: 5.3s; -o-animation-duration: 5.3s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-line03 { /* line 155, move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 156, move.scss */
+  97% { opacity: 0.0; height: 0px; }
+  /* line 157, move.scss */
+  100% { opacity: 1.0; height: 36px; } }
+
+@-moz-keyframes mov-line03 { /* line 160, move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 161, move.scss */
+  97% { opacity: 0.0; height: 0px; }
+  /* line 162, move.scss */
+  100% { opacity: 1.0; height: 36px; } }
+
+@-o-keyframes mov-line03 { /* line 165, move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 166, move.scss */
+  97% { opacity: 0.0; height: 0px; }
+  /* line 167, move.scss */
+  100% { opacity: 1.0; height: 36px; } }
+
+@keyframes mov-line03 { /* line 170, move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 171, move.scss */
+  97% { opacity: 0.0; height: 0px; }
+  /* line 172, move.scss */
+  100% { opacity: 1.0; height: 36px; } }
+
+/*-*/
+/* line 177, move.scss */
+.mov-brief-01 { animation-name: mov-brief-01; -webkit-animation-name: mov-brief-01; -moz-animation-name: mov-brief-01; -o-animation-name: mov-brief-01; animation-duration: 4.6s; -webkit-animation-duration: 4.6s; -moz-animation-duration: 4.6s; -o-animation-duration: 4.6s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-brief-01 { /* line 184, move.scss */
+  0% { opacity: 0.0; }
+  /* line 185, move.scss */
+  93% { opacity: 0.0; }
+  /* line 186, move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-brief-01 { /* line 189, move.scss */
+  0% { opacity: 0.0; }
+  /* line 190, move.scss */
+  93% { opacity: 0.0; }
+  /* line 191, move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-brief-01 { /* line 194, move.scss */
+  0% { opacity: 0.0; }
+  /* line 195, move.scss */
+  93% { opacity: 0.0; }
+  /* line 196, move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-brief-01 { /* line 199, move.scss */
+  0% { opacity: 0.0; }
+  /* line 200, move.scss */
+  93% { opacity: 0.0; }
+  /* line 201, move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 206, move.scss */
+.mov-brief-02 { animation-name: mov-brief-02; -webkit-animation-name: mov-brief-02; -moz-animation-name: mov-brief-02; -o-animation-name: mov-brief-02; animation-duration: 4.7s; -webkit-animation-duration: 4.7s; -moz-animation-duration: 4.7s; -o-animation-duration: 4.7s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-brief-02 { /* line 213, move.scss */
+  0% { opacity: 0.0; }
+  /* line 214, move.scss */
+  93% { opacity: 0.0; }
+  /* line 215, move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-brief-02 { /* line 218, move.scss */
+  0% { opacity: 0.0; }
+  /* line 219, move.scss */
+  93% { opacity: 0.0; }
+  /* line 220, move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-brief-02 { /* line 223, move.scss */
+  0% { opacity: 0.0; }
+  /* line 224, move.scss */
+  93% { opacity: 0.0; }
+  /* line 225, move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-brief-02 { /* line 228, move.scss */
+  0% { opacity: 0.0; }
+  /* line 229, move.scss */
+  93% { opacity: 0.0; }
+  /* line 230, move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 235, move.scss */
+.mov-brief-03 { animation-name: mov-brief-03; -webkit-animation-name: mov-brief-03; -moz-animation-name: mov-brief-03; -o-animation-name: mov-brief-03; animation-duration: 4.8s; -webkit-animation-duration: 4.8s; -moz-animation-duration: 4.8s; -o-animation-duration: 4.8s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-brief-03 { /* line 242, move.scss */
+  0% { opacity: 0.0; }
+  /* line 243, move.scss */
+  93% { opacity: 0.0; }
+  /* line 244, move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-brief-03 { /* line 247, move.scss */
+  0% { opacity: 0.0; }
+  /* line 248, move.scss */
+  93% { opacity: 0.0; }
+  /* line 249, move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-brief-03 { /* line 252, move.scss */
+  0% { opacity: 0.0; }
+  /* line 253, move.scss */
+  93% { opacity: 0.0; }
+  /* line 254, move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-brief-03 { /* line 257, move.scss */
+  0% { opacity: 0.0; }
+  /* line 258, move.scss */
+  93% { opacity: 0.0; }
+  /* line 259, move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 264, move.scss */
+.mov-social { animation-name: mov-social; -webkit-animation-name: mov-social; -moz-animation-name: mov-social; -o-animation-name: mov-social; animation-duration: 5.5s; -webkit-animation-duration: 5.5s; -moz-animation-duration: 5.5s; -o-animation-duration: 5.5s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-social { /* line 271, move.scss */
+  0% { opacity: 0.0; }
+  /* line 272, move.scss */
+  96% { opacity: 0.0; }
+  /* line 273, move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-social { /* line 276, move.scss */
+  0% { opacity: 0.0; }
+  /* line 277, move.scss */
+  96% { opacity: 0.0; }
+  /* line 278, move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-social { /* line 281, move.scss */
+  0% { opacity: 0.0; }
+  /* line 282, move.scss */
+  96% { opacity: 0.0; }
+  /* line 283, move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-social { /* line 286, move.scss */
+  0% { opacity: 0.0; }
+  /* line 287, move.scss */
+  96% { opacity: 0.0; }
+  /* line 288, move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 293, move.scss */
+.mov-footer { animation-name: mov-footer; -webkit-animation-name: mov-footer; -moz-animation-name: mov-footer; -o-animation-name: mov-footer; animation-duration: 8s; -webkit-animation-duration: 8s; -moz-animation-duration: 8s; -o-animation-duration: 8s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-footer { /* line 300, move.scss */
+  0% { opacity: 0.0; }
+  /* line 301, move.scss */
+  75% { opacity: 0.0; }
+  /* line 302, move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-footer { /* line 305, move.scss */
+  0% { opacity: 0.0; }
+  /* line 306, move.scss */
+  75% { opacity: 0.0; }
+  /* line 307, move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-footer { /* line 310, move.scss */
+  0% { opacity: 0.0; }
+  /* line 311, move.scss */
+  75% { opacity: 0.0; }
+  /* line 312, move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-footer { /* line 315, move.scss */
+  0% { opacity: 0.0; }
+  /* line 316, move.scss */
+  75% { opacity: 0.0; }
+  /* line 317, move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 322, move.scss */
+.mov-stage03 { animation-name: mov-stage03; -webkit-animation-name: mov-stage03; -moz-animation-name: mov-stage03; -o-animation-name: mov-stage03; animation-duration: 1s; -webkit-animation-duration: 1s; -moz-animation-duration: 1s; -o-animation-duration: 1s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-stage03 { /* line 329, move.scss */
+  0% { right: -100%; }
+  /* line 330, move.scss */
+  30% { right: -100%; }
+  /* line 331, move.scss */
+  100% { right: 0%; } }
+
+@-moz-keyframes mov-stage03 { /* line 334, move.scss */
+  0% { right: -100%; }
+  /* line 335, move.scss */
+  30% { right: -100%; }
+  /* line 336, move.scss */
+  100% { right: 0%; } }
+
+@-o-keyframes mov-stage03 { /* line 339, move.scss */
+  0% { right: -100%; }
+  /* line 340, move.scss */
+  30% { right: -100%; }
+  /* line 341, move.scss */
+  100% { right: 0%; } }
+
+@keyframes mov-stage03 { /* line 344, move.scss */
+  0% { right: -100%; }
+  /* line 345, move.scss */
+  30% { right: -100%; }
+  /* line 346, move.scss */
+  100% { right: 0%; } }
+
+/*-*/
+/*-*/
+/* line 353, move.scss */
+.mov-stage03b { animation-name: mov-stage03b; -webkit-animation-name: mov-stage03b; -moz-animation-name: mov-stage03b; -o-animation-name: mov-stage03b; animation-duration: 1s; -webkit-animation-duration: 1s; -moz-animation-duration: 1s; -o-animation-duration: 1s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-stage03b { /* line 360, move.scss */
+  0% { right: 0%; display: block; }
+  /* line 361, move.scss */
+  30% { right: 0%; display: block; }
+  /* line 362, move.scss */
+  100% { right: -100%; display: none; } }
+
+@-moz-keyframes mov-stage03b { /* line 365, move.scss */
+  0% { right: 0%; display: block; }
+  /* line 366, move.scss */
+  30% { right: 0%; display: block; }
+  /* line 367, move.scss */
+  100% { right: -100%; display: none; } }
+
+@-o-keyframes mov-stage03b { /* line 370, move.scss */
+  0% { right: 0%; display: block; }
+  /* line 371, move.scss */
+  30% { right: 0%; display: block; }
+  /* line 372, move.scss */
+  100% { right: -100%; display: none; } }
+
+@keyframes mov-stage03b { /* line 375, move.scss */
+  0% { right: 0%; display: block; }
+  /* line 376, move.scss */
+  30% { right: 0%; display: block; }
+  /* line 377, move.scss */
+  100% { right: -100%; display: none; } }
+
+/*-*/
+/* line 381, move.scss */
+.mov-text01 { animation-name: mov-text01; -webkit-animation-name: mov-text01; -moz-animation-name: mov-text01; -o-animation-name: mov-text01; animation-duration: 2s; -webkit-animation-duration: 2s; -moz-animation-duration: 2s; -o-animation-duration: 2s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-text01 { /* line 388, move.scss */
+  0% { opacity: 0.0; }
+  /* line 389, move.scss */
+  95% { opacity: 0.0; }
+  /* line 390, move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-text01 { /* line 393, move.scss */
+  0% { opacity: 0.0; }
+  /* line 394, move.scss */
+  95% { opacity: 0.0; }
+  /* line 395, move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-text01 { /* line 398, move.scss */
+  0% { opacity: 0.0; }
+  /* line 399, move.scss */
+  95% { opacity: 0.0; }
+  /* line 400, move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-text01 { /* line 403, move.scss */
+  0% { opacity: 0.0; }
+  /* line 404, move.scss */
+  95% { opacity: 0.0; }
+  /* line 405, move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 411, move.scss */
+.mov-text02 { animation-name: mov-text02; -webkit-animation-name: mov-text02; -moz-animation-name: mov-text02; -o-animation-name: mov-text02; animation-duration: 2.5s; -webkit-animation-duration: 2.5s; -moz-animation-duration: 2.5s; -o-animation-duration: 2.5s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-text02 { /* line 418, move.scss */
+  0% { opacity: 0.0; }
+  /* line 419, move.scss */
+  92% { opacity: 0.0; }
+  /* line 420, move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-text02 { /* line 423, move.scss */
+  0% { opacity: 0.0; }
+  /* line 424, move.scss */
+  92% { opacity: 0.0; }
+  /* line 425, move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-text02 { /* line 428, move.scss */
+  0% { opacity: 0.0; }
+  /* line 429, move.scss */
+  92% { opacity: 0.0; }
+  /* line 430, move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-text02 { /* line 433, move.scss */
+  0% { opacity: 0.0; }
+  /* line 434, move.scss */
+  92% { opacity: 0.0; }
+  /* line 435, move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 441, move.scss */
+.mov-text03 { animation-name: mov-text03; -webkit-animation-name: mov-text03; -moz-animation-name: mov-text03; -o-animation-name: mov-text03; animation-duration: 2.8s; -webkit-animation-duration: 2.8s; -moz-animation-duration: 2.8s; -o-animation-duration: 2.8s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-text03 { /* line 448, move.scss */
+  0% { opacity: 0.0; }
+  /* line 449, move.scss */
+  92% { opacity: 0.0; }
+  /* line 450, move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-text03 { /* line 453, move.scss */
+  0% { opacity: 0.0; }
+  /* line 454, move.scss */
+  92% { opacity: 0.0; }
+  /* line 455, move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-text03 { /* line 458, move.scss */
+  0% { opacity: 0.0; }
+  /* line 459, move.scss */
+  92% { opacity: 0.0; }
+  /* line 460, move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-text03 { /* line 463, move.scss */
+  0% { opacity: 0.0; }
+  /* line 464, move.scss */
+  92% { opacity: 0.0; }
+  /* line 465, move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 472, move.scss */
+.mov-text04 { animation-name: mov-text04; -webkit-animation-name: mov-text04; -moz-animation-name: mov-text04; -o-animation-name: mov-text04; animation-duration: 3.2s; -webkit-animation-duration: 3.2s; -moz-animation-duration: 3.2s; -o-animation-duration: 3.2s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-text04 { /* line 479, move.scss */
+  0% { opacity: 0.0; }
+  /* line 480, move.scss */
+  94% { opacity: 0.0; }
+  /* line 481, move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-text04 { /* line 484, move.scss */
+  0% { opacity: 0.0; }
+  /* line 485, move.scss */
+  94% { opacity: 0.0; }
+  /* line 486, move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-text04 { /* line 489, move.scss */
+  0% { opacity: 0.0; }
+  /* line 490, move.scss */
+  94% { opacity: 0.0; }
+  /* line 491, move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-text04 { /* line 494, move.scss */
+  0% { opacity: 0.0; }
+  /* line 495, move.scss */
+  94% { opacity: 0.0; }
+  /* line 496, move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 503, move.scss */
+.mov-text05 { animation-name: mov-text05; -webkit-animation-name: mov-text05; -moz-animation-name: mov-text05; -o-animation-name: mov-text05; animation-duration: 3.4s; -webkit-animation-duration: 3.4s; -moz-animation-duration: 3.4s; -o-animation-duration: 3.4s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-text05 { /* line 510, move.scss */
+  0% { opacity: 0.0; }
+  /* line 511, move.scss */
+  93% { opacity: 0.0; }
+  /* line 512, move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-text05 { /* line 515, move.scss */
+  0% { opacity: 0.0; }
+  /* line 516, move.scss */
+  93% { opacity: 0.0; }
+  /* line 517, move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-text05 { /* line 520, move.scss */
+  0% { opacity: 0.0; }
+  /* line 521, move.scss */
+  93% { opacity: 0.0; }
+  /* line 522, move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-text05 { /* line 525, move.scss */
+  0% { opacity: 0.0; }
+  /* line 526, move.scss */
+  93% { opacity: 0.0; }
+  /* line 527, move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 534, move.scss */
+.mov-text06 { animation-name: mov-text06; -webkit-animation-name: mov-text06; -moz-animation-name: mov-text06; -o-animation-name: mov-text06; animation-duration: 3.6s; -webkit-animation-duration: 3.6s; -moz-animation-duration: 3.6s; -o-animation-duration: 3.6s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-text06 { /* line 541, move.scss */
+  0% { opacity: 0.0; }
+  /* line 542, move.scss */
+  93% { opacity: 0.0; }
+  /* line 543, move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-text06 { /* line 546, move.scss */
+  0% { opacity: 0.0; }
+  /* line 547, move.scss */
+  93% { opacity: 0.0; }
+  /* line 548, move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-text06 { /* line 551, move.scss */
+  0% { opacity: 0.0; }
+  /* line 552, move.scss */
+  93% { opacity: 0.0; }
+  /* line 553, move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-text06 { /* line 556, move.scss */
+  0% { opacity: 0.0; }
+  /* line 557, move.scss */
+  93% { opacity: 0.0; }
+  /* line 558, move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 565, move.scss */
+.mov-text07 { animation-name: mov-text07; -webkit-animation-name: mov-text07; -moz-animation-name: mov-text07; -o-animation-name: mov-text07; animation-duration: 3.8s; -webkit-animation-duration: 3.8s; -moz-animation-duration: 3.8s; -o-animation-duration: 3.8s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-text07 { /* line 572, move.scss */
+  0% { opacity: 0.0; }
+  /* line 573, move.scss */
+  98% { opacity: 0.0; }
+  /* line 574, move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-text07 { /* line 577, move.scss */
+  0% { opacity: 0.0; }
+  /* line 578, move.scss */
+  98% { opacity: 0.0; }
+  /* line 579, move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-text07 { /* line 582, move.scss */
+  0% { opacity: 0.0; }
+  /* line 583, move.scss */
+  98% { opacity: 0.0; }
+  /* line 584, move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-text07 { /* line 587, move.scss */
+  0% { opacity: 0.0; }
+  /* line 588, move.scss */
+  98% { opacity: 0.0; }
+  /* line 589, move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 596, move.scss */
+.mov-line04 { animation-name: mov-line04; -webkit-animation-name: mov-line04; -moz-animation-name: mov-line04; -o-animation-name: mov-line04; animation-duration: 6s; -webkit-animation-duration: 6s; -moz-animation-duration: 6s; -o-animation-duration: 6s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-line04 { /* line 603, move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 604, move.scss */
+  99% { opacity: 0.0; height: 0px; }
+  /* line 605, move.scss */
+  100% { opacity: 1.0; height: 75px; } }
+
+@-moz-keyframes mov-line04 { /* line 608, move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 609, move.scss */
+  99% { opacity: 0.0; height: 0px; }
+  /* line 610, move.scss */
+  100% { opacity: 1.0; height: 75px; } }
+
+@-o-keyframes mov-line04 { /* line 613, move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 614, move.scss */
+  99% { opacity: 0.0; height: 0px; }
+  /* line 615, move.scss */
+  100% { opacity: 1.0; height: 75px; } }
+
+@keyframes mov-line04 { /* line 618, move.scss */
+  0% { opacity: 0.0; height: 0px; }
+  /* line 619, move.scss */
+  99% { opacity: 0.0; height: 0px; }
+  /* line 620, move.scss */
+  100% { opacity: 1.0; height: 75px; } }
+
+/*-*/
+/* line 626, move.scss */
+.mov-line05 { animation-name: mov-line05; -webkit-animation-name: mov-line05; -moz-animation-name: mov-line05; -o-animation-name: mov-line05; animation-duration: 6.05s; -webkit-animation-duration: 6.05s; -moz-animation-duration: 6.05s; -o-animation-duration: 6.05s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-line05 { /* line 633, move.scss */
+  0% { opacity: 0.0; width: 0px; }
+  /* line 634, move.scss */
+  99% { opacity: 0.0; width: 0px; }
+  /* line 635, move.scss */
+  100% { opacity: 1.0; width: 29px; } }
+
+@-moz-keyframes mov-line05 { /* line 638, move.scss */
+  0% { opacity: 0.0; width: 0px; }
+  /* line 639, move.scss */
+  99% { opacity: 0.0; width: 0px; }
+  /* line 640, move.scss */
+  100% { opacity: 1.0; width: 29px; } }
+
+@-o-keyframes mov-line05 { /* line 643, move.scss */
+  0% { opacity: 0.0; width: 0px; }
+  /* line 644, move.scss */
+  99% { opacity: 0.0; width: 0px; }
+  /* line 645, move.scss */
+  100% { opacity: 1.0; width: 29px; } }
+
+@keyframes mov-line05 { /* line 648, move.scss */
+  0% { opacity: 0.0; width: 0px; }
+  /* line 649, move.scss */
+  99% { opacity: 0.0; width: 0px; }
+  /* line 650, move.scss */
+  100% { opacity: 1.0; width: 29px; } }
+
+/*-*/
+/* line 655, move.scss */
+.mov-text08 { animation-name: mov-text08; -webkit-animation-name: mov-text08; -moz-animation-name: mov-text08; -o-animation-name: mov-text08; animation-duration: 6.1s; -webkit-animation-duration: 6.1s; -moz-animation-duration: 6.1s; -o-animation-duration: 6.1s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-text08 { /* line 662, move.scss */
+  0% { opacity: 0.0; }
+  /* line 663, move.scss */
+  99% { opacity: 0.0; }
+  /* line 664, move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-text08 { /* line 667, move.scss */
+  0% { opacity: 0.0; }
+  /* line 668, move.scss */
+  99% { opacity: 0.0; }
+  /* line 669, move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-text08 { /* line 672, move.scss */
+  0% { opacity: 0.0; }
+  /* line 673, move.scss */
+  99% { opacity: 0.0; }
+  /* line 674, move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-text08 { /* line 677, move.scss */
+  0% { opacity: 0.0; }
+  /* line 678, move.scss */
+  99% { opacity: 0.0; }
+  /* line 679, move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 685, move.scss */
+.mov-gif { animation-name: mov-gif; -webkit-animation-name: mov-gif; -moz-animation-name: mov-gif; -o-animation-name: mov-gif; animation-duration: 8.2s; -webkit-animation-duration: 8.2s; -moz-animation-duration: 8.2s; -o-animation-duration: 8.2s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-gif { /* line 692, move.scss */
+  0% { opacity: 0.0; }
+  /* line 693, move.scss */
+  90% { opacity: 0.0; }
+  /* line 694, move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-gif { /* line 697, move.scss */
+  0% { opacity: 0.0; }
+  /* line 698, move.scss */
+  90% { opacity: 0.0; }
+  /* line 699, move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-gif { /* line 702, move.scss */
+  0% { opacity: 0.0; }
+  /* line 703, move.scss */
+  90% { opacity: 0.0; }
+  /* line 704, move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-gif { /* line 707, move.scss */
+  0% { opacity: 0.0; }
+  /* line 708, move.scss */
+  90% { opacity: 0.0; }
+  /* line 709, move.scss */
+  100% { opacity: 1.0; } }
+
+/*-*/
+/* line 716, move.scss */
+.mov-text09 { animation-name: mov-text09; -webkit-animation-name: mov-text09; -moz-animation-name: mov-text09; -o-animation-name: mov-text09; animation-duration: 9s; -webkit-animation-duration: 9s; -moz-animation-duration: 9s; -o-animation-duration: 9s; animation-delay: 0s; -webkit-animation-delay: 0s; -moz-animation-delay: 0s; -o-animation-delay: 0s; }
+
+@-webkit-keyframes mov-text09 { /* line 723, move.scss */
+  0% { opacity: 0.0; }
+  /* line 724, move.scss */
+  90% { opacity: 0.0; }
+  /* line 725, move.scss */
+  100% { opacity: 1.0; } }
+
+@-moz-keyframes mov-text09 { /* line 728, move.scss */
+  0% { opacity: 0.0; }
+  /* line 729, move.scss */
+  90% { opacity: 0.0; }
+  /* line 730, move.scss */
+  100% { opacity: 1.0; } }
+
+@-o-keyframes mov-text09 { /* line 733, move.scss */
+  0% { opacity: 0.0; }
+  /* line 734, move.scss */
+  90% { opacity: 0.0; }
+  /* line 735, move.scss */
+  100% { opacity: 1.0; } }
+
+@keyframes mov-text09 { /* line 738, move.scss */
+  0% { opacity: 0.0; }
+  /* line 739, move.scss */
+  90% { opacity: 0.0; }
+  /* line 740, move.scss */
+  100% { opacity: 1.0; } }
