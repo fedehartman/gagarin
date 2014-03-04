@@ -21,7 +21,7 @@ html {overflow: hidden;}
 .a01 {background-color: #2e6399; right: -100%;} /*votación*/
 .a02 {background-color: #d9584c; left: -100%;}
 .a03 {background-color: #d99048; bottom: -100%;}
-.a04 {background: #609926 url(../../img/front/patterns/green.png) repeat 0px 0px; top: -100%;} /*tienda*/
+.a04 {background-color: #609926; top: -100%;} /*tienda*/
 .tapar {background-color: #e6bd45; z-index:800; top: 0px; left: 0px;}
 
 .m01 {top: 0%; right: 0%;}
@@ -35,8 +35,6 @@ html {overflow: hidden;}
   left: 50%;
   margin: -18% 0px 0px -49%;
   }
-
-.wrapper, .nano {width: 98%; height: 78%;}
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;

@@ -234,7 +234,7 @@ html {
   bottom: -100%; }
 
 .a04 {
-  background: #609926 url(../../img/front/patterns/green.png) repeat 0px 0px;
+  background-color: #609926;
   top: -100%; }
 
 /*tienda*/
@@ -265,10 +265,6 @@ html {
   top: 50%;
   left: 50%;
   margin: -18% 0px 0px -49%; }
-
-.wrapper, .nano {
-  width: 98%;
-  height: 78%; }
 
 /*--| 1· Big Screen
 -------------------------------------------------------------------------- |--*/
@@ -305,9 +301,6 @@ html {
     margin-top: -25%; } }
 /*--| 4· 1024
 -------------------------------------------------------------------------- |--*/
-@media (max-width: 781px) and (min-width: 240px) {
-  .mobile {
-    display: block; } }
 .mov-imago {
   animation-name: mov-imago;
   -webkit-animation-name: mov-imago;
@@ -2020,7 +2013,7 @@ footer {
   float: left;
   width: 40%;
   height: 270px;
-  font-size: 10em;
+  font-size: 9em;
   line-height: 235px;
   color: rgba(255, 255, 255, 0.96);
   font-weight: normal;
@@ -2626,19 +2619,19 @@ footer {
   height: auto;
   min-height: 20px;
   overflow: hidden;
-  margin: 0px 0px 0px 0px; }
+  margin: 30px 0px 0px 0px; }
 
 .tienda .listado ul li {
   width: 235px;
-  height: 415px;
+  height: 435px;
   overflow: hidden;
   margin: 0px 13px 61px 13px; }
 
 .tienda .listado ul li .top {
   width: 225px;
-  height: 35px;
+  height: 55px;
   margin: 0px 0px 0px 0px;
-  background: url(../../img/front/sprite.png) no-repeat -290px 0px; }
+  background: url(../../img/front/sprite.png) no-repeat -290px -40px; }
 
 .tienda .listado ul li .etiqueta {
   width: 225px;
@@ -3143,3 +3136,7 @@ footer {
 
 .nano:hover > .nano-pane, .nano-pane.active, .nano-pane.flashed {
   opacity: 0.98; }
+
+.wrapper, .nano {
+  width: 98%;
+  height: 78%; }
