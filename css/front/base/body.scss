@@ -1,6 +1,6 @@
 /*--| Body
 -------------------------------------------------------------------------- |--*/
-.fa {background-color: #2156a6; margin: 0px 0px 0px 0px;}
+
 html {overflow: hidden;}
 
 .a00, .a01, .a02, .a03, .a04, .tapar {
@@ -35,3 +35,21 @@ html {overflow: hidden;}
   left: 50%;
   margin: -18% 0px 0px -49%;
   }
+
+.wrapper, .nano {width: 98%; height: 78%;}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transition($time) {
+  -webkit-transition: $time;
+     -moz-transition: $time;
+      -ms-transition: $time;
+       -o-transition: $time;
+          transition: $time;
+}

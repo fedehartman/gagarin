@@ -1,127 +1,174 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*-*/
-
-
-/*Columna izquierda fluida*/ 
-
-/*.footer-wrapper {float: left; width: 100%; overflow: hidden;}
-
-.footer1 {
-  height: 50px;
-  margin-right: 350px;
-  overflow: hidden;
-  background: #ff9900 url(../../img/front/footer1.png) no-repeat 0px 0px;
-  }
-
-.footer1 .slideshow {
-  width: 95%;
-  height: 30px;
-  background-color: #21a656;
-  margin: 10px 0px 0px 15px;
-  overflow: hidden;
-  }
-
-.footer1 .slide1 li a {
-  display: block;
-  width: 100px;
-  height: 30px;
-  margin: 0px 15px 0px 15px;
-  background-color: #8b21a6;
-  float: left;
-  }*/
-
-
-
-
-/*.contenido h3 {
-  font: 700 4em/1.5em 'Asap', Arial, Helvetica, sans-serif;
-  color: rgba(256, 256, 256, 0.55);
-  margin: 0px 0px 0px 0px;
-}
-.contenido h4 {
-  font: 700 2em/1.5em 'Asap', Arial, Helvetica, sans-serif;
-  color: rgba(256, 256, 256, 0.60);
-  margin: 0px 0px 0px 10px;
-}
-
-
-.tl {
-  width: 375px;
-  height: 235px;
-  position: absolute;
-  z-index: 20;
-  margin: 320px 0px 0px 214px;
-  }
-
-.a00 ul {
-  width: 345px;
-  height: 455px;
-  
-  margin: 33px 0px 0px 655px;
-  position: absolute;
-  z-index: 20;
-  }
-
-.a00 ul li {
-  cursor: pointer;
-  width: 345px;
-  height: 45px;
-  margin: 0px 0px 10px 0px;
-  background-color: #8b21a6;
-  opacity: .7;
-}
-
-.a00 ul li.b02 {margin: 0px 0px 255px 0px;}*/
-
-/*--| Body, tipografías, esétera
+/*--| 01· Home
 -------------------------------------------------------------------------- |--*/
 
+.home {
+
+.wrapper {
+  width: 1200px;
+  height: 600px;
+  margin: -310px 0px 0px -600px;
+}
+
+h1 {
+  width: 580px;
+  height: 210px;
+  margin: 0px 0px 0px 0px;
+  position: absolute;
+  margin: 70px 0px 0px 20px;
+  background: url(../../img/front/sprite2.png) no-repeat 0px 0px;
+}
+
+h2 {
+  width: 500px;
+  height: 120px;
+  margin: 119px 0px 0px 662px;
+  font-size: 2em; line-height: 1.5em; color: $blue;
+  font-weight: normal; font-family: 'Asap', Arial, Helvetica, sans-serif;
+  position: absolute;
+  a {
+    color: $blue;
+    padding: 3px 5px;
+    margin: -3px -5px;
+    @include border-radius(3px);
+    &:hover {
+      background-color: $blue;
+      color: #fff;
+    }
+  }
+}
+
+.gif {
+  width: 200px;
+  height: 105px;
+  margin: 0px 0px 0px 660px;
+  position: absolute;
+}
+
+nav ul {
+  width: 330px;
+  height: auto;
+  min-height: 20px;
+  overflow: hidden;
+  margin: 300px 0px 0px 270px;
+  position: absolute;
+  li a {
+    text-align: right;
+    display: inline-block;
+    width: auto;
+    float: right;
+    height: 35px;
+    margin: 0px 0px 5px 0px;
+    background-color: $blue;
+    @include border-radius(3px);
+    font-size: 1.6em; line-height: 35px; color: #fff;
+    font-weight: 700; font-family: 'Asap', Arial, Helvetica, sans-serif;
+    padding: 0px 10px 0px 50px;
+    @include transition(all 0.2s ease-in-out);
+    &:hover {background-color: #065780;}
+  }
+  .b01 a {
+    background-color: #b32d12;
+    height: 40px;
+    font-size: 2em; line-height: 40px;
+    padding-left: 240px;
+  }
+}
+
+.social {
+  width: 155px;
+  height: 20px;
+  margin: 510px 0px 0px 447px;
+  position: absolute;
+  .tw {
+    float: left;
+    width: 75px;
+    height: 20px;
+    margin: 0px 0px 0px 0px;
+  }
+  .fb {
+    float: right;
+    width: 80px;
+    height: 20px;
+    margin: 0px 0px 0px 0px;
+    overflow: hidden;
+  }
+}
+
+.widget {
+  width: 460px;
+  height: 280px;
+  margin: 295px 0px 0px 664px;
+  position: absolute;
+  color: #999;
+}
+
+.line {
+  background-color: $blue;
+  position: absolute;
+  opacity: .3;
+}
+
+.line.line01 {
+  width: 30px;
+  height: 1px;
+  margin: 176px 0px 0px 615px;
+  }
+
+.line.line02 {
+  width: 1px;
+  height: 35px;
+  margin: 247px 0px 0px 520px;
+  }
+
+.line.line03 {
+  width: 1px;
+  height: 20px;
+  margin: 258px 0px 0px 850px;
+  }
+
+.line.line04 {
+  width: 680px;
+  height: 1px;
+  margin: 566px 0px 0px 446px;
+  }
+
+.creditos {
+  width: 40px;
+  height: 15px;
+  margin: 0px 0px 0px 0px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 20;
+  .sov a {
+    width: 15px;
+    height: 15px;
+    margin: 0px 0px 0px 0px;
+    background: url(../../img/front/sprite2.png) no-repeat -25px -210px;
+    float: right;
+  }
+  .les a {
+    width: 25px;
+    height: 15px;
+    margin: 0px 0px 0px 0px;
+    background: url(../../img/front/sprite2.png) no-repeat 0px -210px;
+    float: left;
+  }
+}
 
 
-/*--| Content
----------------------------------------------------------------------------------------------- |--*/
-
-.content {
+}
+/* .content {
   width: 960px;
   height: 500px;
   position: absolute;
   left: 50%;
   top: 50%;
   margin: -265px 0px 0px -480px;
-  /*background-color: rgba(0, 0, 0, 0.65);*/
+  /*background-color: rgba(0, 0, 0, 0.65);
   }
 
-.content h1, .content h2, .content h3 {font-size: 0;}
+/*.content h1, .content h2, .content h3 {font-size: 0;}
 
 .content .imago {
   width: 200px;
@@ -264,4 +311,4 @@
   top: 10px;
   left: 10px;
   cursor: pointer;
-}
+} */
