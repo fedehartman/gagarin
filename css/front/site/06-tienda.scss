@@ -11,7 +11,7 @@
   margin: 45px 0px 0px 0px;
   li {
     width: 375px;
-    height: 510px;
+    height: 545px;
     margin: 0px 22px 44px 22px;
     background-color: #fff;
     padding: 5px 0px 15px 0px;
@@ -40,8 +40,10 @@
     }
     h4 {
       width: 335px;
-      margin: 5px 0px 5px 21px;
-      font-size: 2em; line-height: 1.5em; color: #1f5c99;
+      margin: 5px 0px 9px 13px;
+      padding: 3px 0px 3px 10px;
+      background-color: #1f5c99;
+      font-size: 2em; line-height: 1.5em; color: #fff;
       font-weight: 700; font-family: 'Asap', Arial, Helvetica, sans-serif;
     }
     article {
@@ -61,6 +63,13 @@
           margin: 0px 4px 0px 5px;
           display: inline-block;
         }
+        &:first-child {
+          font-weight: 700;
+          padding: 0px 0px 2px 0px;
+          margin: 2px 0px 7px 0px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+          }
+        &:first-child:before {display: none;}
       }
     }
     .boton {
