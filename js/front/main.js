@@ -41,6 +41,10 @@ $('.slider').cycle({
 
 $('#form-pedido').on('submit',enviarPedido);
 
+$(".tienda .listado ul li .boton a").click(function(e) {
+  $(this).toggleClass('donado');
+  return false;
+  });
 
 
 
