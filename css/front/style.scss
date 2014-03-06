@@ -2,7 +2,6 @@
 -------------------------------------------------------------------------- |--*/
 
 @import "base/reset";
-@import "base/mq";
 @import "base/type";
 @import "base/color";
 @import "base/body";
@@ -36,4 +35,6 @@
 -------------------------------------------------------------------------- |--*/
 
 @import "vendor/lightbox";
-@import "vendor/scroll"; 
+@import "vendor/scroll";
+
+@import "base/mq";
