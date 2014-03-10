@@ -2164,11 +2164,13 @@ footer {
     .home nav ul li a:hover {
       background-color: #065780; }
   .home nav ul .b01 a {
-    background-color: #b32d12;
+    background-color: #b22d12;
     height: 40px;
     font-size: 2em;
     line-height: 40px;
     padding-left: 240px; }
+    .home nav ul .b01 a:hover {
+      background-color: #99260f; }
 .home .news {
   width: 600px;
   height: 255px;
@@ -2180,8 +2182,6 @@ footer {
     font-weight: 700;
     font-family: 'Asap', Arial, Helvetica, sans-serif;
     margin: 0px 0px 22px 0px; }
-    .home .news .quedan span {
-      color: #b22d12; }
   .home .news ul li {
     font-size: 1.6em;
     line-height: 1.5em;
@@ -2258,17 +2258,17 @@ footer {
 .home .line.line05 {
   width: 15px;
   height: 1px;
-  margin: -225px 0px 0px 810px; }
+  margin: -210px 0px 0px 770px; }
 .home .line.line06 {
   width: 1px;
-  height: 35px;
-  margin: -225px 0px 0px 825px; }
+  height: 25px;
+  margin: -210px 0px 0px 785px; }
 .home .creditos {
-  width: 40px;
+  width: 45px;
   height: 15px;
   margin: 0px 0px 0px 0px;
   position: fixed;
-  top: 15px;
+  bottom: 15px;
   right: 15px;
   z-index: 20; }
   .home .creditos .sov a {
@@ -2283,161 +2283,10 @@ footer {
     margin: 0px 0px 0px 0px;
     background: url(../../img/front/sprite2.png) no-repeat 0px -210px;
     float: left; }
+.home .kkc-days,
+.home .kkc-days-text {
+  color: #b22d12; }
 
-/* .content {
-  width: 960px;
-  height: 500px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -265px 0px 0px -480px;
-  /*background-color: rgba(0, 0, 0, 0.65);
-  }
-
-/*.content h1, .content h2, .content h3 {font-size: 0;}
-
-.content .imago {
-  width: 200px;
-  height: 210px;
-  position: absolute;
-  margin: 28px 0px 0px 0px;
-  z-index: 10;
-  background: url(../../img/front/imago.png) no-repeat 0px 0px;
-  }
-
-.content h1 {
-  width: 590px;
-  height: 210px;
-  position: absolute;
-  margin: 28px 0px 0px 0px;
-  background: url(../../img/front/logo2.png) no-repeat 0px 0px;
-  }
-
-.content h3 {
-  width: 231px;
-  height: 25px;
-  position: absolute;
-  margin: 119px 0px 0px 700px;
-  opacity: 0.95;
-  background: url(../../img/front/sabado.png) no-repeat 0px 0px;
-  }
-
-.content .line01, .content .line02, .content .line03 {
-  background-color: rgba(20, 143, 204, 0.21);
-  position: absolute;
-  }
-
-.content .line01 {
-  width: 90px;
-  height: 1px;
-  margin: 135px 0px 0px 599px;
-  }
-
-.content .line02 {
-  width: 1px;
-  height: 72px;
-  margin: 211px 0px 0px 507px;
-  }
-
-.content p {
-  position: absolute;
-  display: block;
-  margin: 302px 0px 0px 474px;
-  font-size: 1.5em; line-height: 30px; color: rgba(20, 143, 204, 0.91);
-  font-weight: normal; font-family: 'Asap', Arial, Helvetica, sans-serif;
-  }
-
-.content p a {
-  display: inline-block;
-  padding: 0px 15px 0px 10px;
-  height: 30px;
-  background-color: #148fcc;
-  opacity: .94;
-  color: #fff;
-  font-weight: 700;
-  -webkit-transition: all 0.2s ease-in-out;
-     -moz-transition: all 0.2s ease-in-out;
-      -ms-transition: all 0.2s ease-in-out;
-       -o-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
-  margin: 0px 0px 0px 10px;
-  -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
-  }
-
-.content p.pri {
-  font-size: 2em; line-height: 45px; color: rgba(20, 143, 204, 0.91);
-  font-weight: 700; font-family: 'Asap', Arial, Helvetica, sans-serif;
-}
-.content p.pri a {height: 45px; padding: 0px 20px 0px 15px; background-color: #cc1414;}
-.content p a:hover {
-  opacity: 1;
-  -webkit-box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
-     -moz-box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
-  }
-.content p.pri a:before {
-  font-family: 'aw';
-  font-size: 0.9em;
-  margin: -2px 8px 0px 0px;
-  vertical-align: middle;
-  content: "\f061";
-  display: inline-block;
-}
-.content p a:active {
-  opacity: 1;
-  -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none;
-  }
-
-.content p.last {margin: 440px 0px 0px 245px;}
-.content p.sec {margin: 402px 0px 0px 363px;}
-.content p.bre {margin: 360px 0px 0px 243px;}
-.content p.last02 {margin: 443px 0px 0px 296px;}
-
-.content .social {
-  width: 90px;
-  height: 50px;
-  position: absolute;
-  margin: 211px 0px 0px 792px;
-  }
-
-.content .social .fb, .content .social .tw {
-  width: 90px;
-  height: 25px;
-  }
-
-.content .line03 {
-  width: 1px;
-  height: 36px;
-  margin: 158px 0px 0px 807px;
-  background-color: rgba(20, 143, 204, 0.21);
-  position: absolute;
-  }
-
-.mobile-lay {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 90909090909090909090909090000090000000000;
-  background-color: rgba(255, 255, 255, 0.85);
-}
-.mobile {
-  display: none;
-  width: 300px;
-  height: 400px;
-  margin: 0px 0px 0px 0px;
-  background-color: #8b21a6;
-  background: url(../../img/front/cel.jpg) no-repeat 0px 0px;
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  cursor: pointer;
-} */
 /*--| 1· Votación
 -------------------------------------------------------------------------- |--*/
 .categorias {

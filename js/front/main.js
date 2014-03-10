@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
 /*--| Scroller
 -------------------------------------------------------------------------- |--*/
 
@@ -31,7 +32,7 @@ $('.slider').cycle({
     timeout: 0, 
     next:   '.next', 
     prev:   '.prev' 
-  });
+});
 
 
 
@@ -43,7 +44,23 @@ $('.slider').cycle({
 $(".gif").randombg({
     directory: "../img/front/dummys/gif/",
     howmany: 12
-  });
+});
+
+
+
+
+
+/*--| Countdown
+-------------------------------------------------------------------------- |--*/
+
+$(".kkcountdown").kkcountdown({
+  dayText   : ' día, ',
+  daysText  : ' días, ',
+  hoursText : ' horas, ',
+  minutesText : 'minutos y ',
+  secondsText : ' segundos',
+  displayZeroDays : true
+});
 
 
 
