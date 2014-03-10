@@ -4,52 +4,45 @@
 .home {
 
 .wrapper {
-  width: 1200px;
-  height: 600px;
-  margin: -310px 0px 0px -600px;
+  width: 1110px;
+  height: 465px;
+  margin: -230px 0px 0px -555px;
+  /* background: url(../../img/front/guide.png) repeat 0px 0px; */
 }
 
 h1 {
-  width: 580px;
-  height: 210px;
-  margin: 0px 0px 0px 0px;
+  width: 360px;
+  height: 130px;
   position: absolute;
-  margin: 70px 0px 0px 20px;
+  margin: 40px 0px 0px 1px;
   background: url(../../img/front/sprite2.png) no-repeat 0px 0px;
 }
 
 h2 {
-  width: 500px;
-  height: 120px;
-  margin: 119px 0px 0px 662px;
-  font-size: 2em; line-height: 1.5em; color: $blue;
+  width: 450px;
+  height: 125px;
+  margin: 300px 0px 0px 445px;
+  font-size: 1.9em; line-height: 1.447368421052632em; color: $blue;
   font-weight: normal; font-family: 'Asap', Arial, Helvetica, sans-serif;
+  text-align: right;
   position: absolute;
-  a {
-    color: $blue;
-    padding: 3px 5px;
-    margin: -3px -5px;
-    @include border-radius(3px);
-    &:hover {
-      background-color: $blue;
-      color: #fff;
-    }
-  }
 }
 
 .gif {
+  float: right;
   width: 200px;
-  height: 105px;
-  margin: 0px 0px 0px 660px;
+  height: 125px;
+  margin: 290px 0px 0px 910px;
   position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 nav ul {
-  width: 330px;
+  width: 310px;
   height: auto;
   min-height: 20px;
   overflow: hidden;
-  margin: 300px 0px 0px 270px;
+  margin: 225px 0px 0px 50px;
   position: absolute;
   li a {
     text-align: right;
@@ -63,7 +56,7 @@ nav ul {
     font-size: 1.6em; line-height: 35px; color: #fff;
     font-weight: 700; font-family: 'Asap', Arial, Helvetica, sans-serif;
     padding: 0px 10px 0px 50px;
-    @include transition(all 0.2s ease-in-out);
+    @include transition(all 0.15s ease-in-out);
     &:hover {background-color: #065780;}
   }
   .b01 a {
@@ -74,62 +67,110 @@ nav ul {
   }
 }
 
+.news {
+  width: 600px;
+  height: 255px;
+  margin: 10px 0px 0px 455px;
+  .quedan {
+    font-size: 2em; line-height: 1.5em; color: $blue;
+    font-weight: 700; font-family: 'Asap', Arial, Helvetica, sans-serif;
+    margin: 0px 0px 22px 0px;
+    span {color: $red;}
+  }
+  ul li {
+    font-size: 1.6em; line-height: 1.5em; color: $blue;
+    font-weight: normal; font-family: 'Asap', Arial, Helvetica, sans-serif;
+    margin: 0px 0px 0.5em 25px;
+    &:before {
+      font-family: 'aw';
+      font-size: 0.9em;
+      content: "\f00c";
+      margin: 1px 4px 0px 0px;
+      display: inline-block;
+      color: $red;
+    }
+    a {
+      color: $blue;
+      font-weight: 700;
+      @include transition(background 0.15s ease-in-out);
+      @include border-radius(3px);
+      &:hover {
+        margin: 0px 0px 0px -4px;
+        padding: 0px 4px 0px 4px;
+        color: #fff;
+        background-color: $blue;
+      }
+    }
+  }
+}
+
 .social {
-  width: 155px;
+  width: 946px;
   height: 20px;
-  margin: 510px 0px 0px 447px;
+  margin: 180px 0px 0px 160px;
   position: absolute;
+  .line-social {
+    width: 780px;
+    height: 1px;
+    margin: 9px 0px 0px 0px;
+  }
   .tw {
-    float: left;
+    position: absolute;
     width: 75px;
     height: 20px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 795px;
   }
   .fb {
-    float: right;
+    position: absolute;
     width: 80px;
     height: 20px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 875px;
     overflow: hidden;
   }
 }
 
-.widget {
-  width: 460px;
-  height: 280px;
-  margin: 295px 0px 0px 664px;
-  position: absolute;
-  color: #999;
-}
 
 .line {
   background-color: $blue;
   position: absolute;
+  z-index: 20;
   opacity: .3;
 }
 
 .line.line01 {
-  width: 30px;
+  width: 55px;
   height: 1px;
-  margin: 176px 0px 0px 615px;
+  margin: -160px 0px 0px 375px;
   }
 
 .line.line02 {
   width: 1px;
-  height: 35px;
-  margin: 247px 0px 0px 520px;
+  height: 160px;
+  margin: -160px 0px 0px 430px;
   }
 
 .line.line03 {
-  width: 1px;
-  height: 20px;
-  margin: 258px 0px 0px 850px;
+  width: 260px;
+  height: 1px;
+  margin: 0px 0px 0px 430px;
   }
 
 .line.line04 {
-  width: 680px;
+  width: 1px;
+  height: 15px;
+  margin: 0px 0px 0px 690px;
+  }
+
+.line.line05 {
+  width: 15px;
   height: 1px;
-  margin: 566px 0px 0px 446px;
+  margin: -225px 0px 0px 810px;
+  }
+
+.line.line06 {
+  width: 1px;
+  height: 35px;
+  margin: -225px 0px 0px 825px;
   }
 
 .creditos {

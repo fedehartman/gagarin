@@ -155,39 +155,6 @@ html, body {
   overflow-x: hidden; }
 
 /*--| ------------------------------------------------------------------------------------------------------------ |--*/
-/*--| 1· Big Screen
--------------------------------------------------------------------------- |--*/
-@media (min-width: 1441px) {
-  .wrapper, .nano {
-    height: 82%;
-    margin-top: -20%; }
-
-  .categorias li {
-    margin: 10px; } }
-/*--| 2· 1440
--------------------------------------------------------------------------- |--*/
-@media (max-width: 1440px) and (min-width: 1367px) {
-  .wrapper, .nano {
-    height: 80%;
-    margin-top: -21%; }
-
-  .categorias li {
-    margin: 24px; } }
-/*--| 3· 1280
--------------------------------------------------------------------------- |--*/
-@media (max-width: 1280px) and (min-width: 1025px) {
-  .wrapper, .nano {
-    height: 78%;
-    margin-top: -20%; }
-
-  .categorias li {
-    margin: 7px; } }
-/*--| 4· 1024
--------------------------------------------------------------------------- |--*/
-@media (max-width: 1024px) and (min-width: 781px) {
-  .wrapper, .nano {
-    height: 78%;
-    margin-top: -25%; } }
 /*--| Tipografías
 -------------------------------------------------------------------------- |--*/
 @font-face {
@@ -2086,6 +2053,10 @@ footer {
   color: #2e6399;
   background-color: rgba(255, 255, 255, 0.91); }
 
+.wrapper .cabezal article p strong.green {
+  color: #fff;
+  background-color: #74b336; }
+
 .wrapper .cabezal article p:before {
   font-family: 'aw';
   font-size: 0.3em;
@@ -2167,7 +2138,8 @@ footer {
   width: 200px;
   height: 105px;
   margin: 0px 0px 0px 660px;
-  position: absolute; }
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.15); }
 .home nav ul {
   width: 330px;
   height: auto;
@@ -2440,8 +2412,14 @@ footer {
   float: left;
   background: url(../../img/front/sprite.png) no-repeat 0px -120px; }
 
+.categorias li.cat-locked {
+  background: url(../../img/front/sprite.png) no-repeat -295px -120px; }
+
+.categorias li .nueva {
+  display: none; }
+
 .categorias li .cabezal {
-  width: 250px;
+  width: 270px;
   height: 78px;
   margin: 48px 0px 0px 12px; }
 
@@ -2453,15 +2431,15 @@ footer {
   overflow: hidden; }
 
 .categorias li h5 {
-  width: 173px;
-  font-size: 2.1em;
-  line-height: 1.2em;
+  width: 183px;
+  font-size: 2em;
+  line-height: 1.1em;
   color: #fff;
   font-weight: 700;
   font-family: 'Asap', Arial, Helvetica, sans-serif;
   display: block;
   float: left;
-  margin: 8px 0px 0px 10px; }
+  margin: 1px 0px 0px 10px; }
 
 .categorias li p {
   font-size: 1.3em;
@@ -2518,14 +2496,79 @@ footer {
 .categorias li .vota a:active {
   background-color: #42661f; }
 
+.categorias li.cat-nueva .nueva {
+  display: block;
+  width: 45px;
+  height: 17px;
+  margin: 18px 0px 0px 14px;
+  position: absolute;
+  z-index: 20;
+  background: url(../../img/front/nueva.png) no-repeat 0px 0px; }
+
 .categorias li.cat-locked {
-  background: url(../../img/front/sprite.png) no-repeat -295px -120px; }
+background: url(../../img/front/sprite.png) no-repeat -295px -120px;
+}
 
 .categorias li.cat-geek {
-  background: url(../../img/front/sprite.png) no-repeat -295px -120px; }
+background: url(../../img/front/sprite.png) no-repeat -5px -560px;
+}
 
 .categorias li.cat-cerrada {
-  background: url(../../img/front/sprite.png) no-repeat -295px -120px; }
+background: url(../../img/front/sprite.png) no-repeat -300px -560px;}
+
+
+/*--| 5· Tienda
+-------------------------------------------------------------------------- |--*/
+
+.modal-geek figure {
+  width: 400px;
+  height: 150px;
+  margin: 0px 0px 0px 0px;
+  background: url(../../img/front/sprite.png) no-repeat 0px -1000px;}
+
+.modal-geek p {margin-left: 1px;}
+.modal-geek form {
+  width: 400px;
+  height: 30px;
+  margin: 20px 0px 10px 0px;
+  }
+
+.modal-geek form input {
+  background-color: #fff;
+  width: 300px;
+  height: 28px;
+  margin: 0px 5px 0px 0px;
+  float: left;
+  padding: 0px 10px 0px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  font-size: 1.3em; line-height: 30px; color: rgba(0, 0, 0, 0.75);
+  font-weight: normal; font-family: 'Asap', Arial, Helvetica, sans-serif;
+  }
+
+.modal-geek form input.submit {
+  cursor: pointer;
+  float: left;
+  width: 60px;
+  height: 30px;
+  margin: 0px 0px 0px 0px;
+  background-color: #1f5c99;
+  font-size: 1.3em; line-height: 30px; color: rgba(255, 255, 255, 0.95);
+  font-weight: 700; font-family: 'Asap', Arial, Helvetica, sans-serif;
+  }
+
+.modal-geek .msg {
+  display: block;
+  width: 380px;
+  padding: 0px 10px 0px 10px;
+  height: 35px;
+  margin: 0px 0px 0px 0px;
+  background-color: #8b21a6;
+  font-size: 1.3em; line-height: 35px; color: rgba(255, 255, 255, 0.90);
+  font-weight: 700; font-family: 'Asap', Arial, Helvetica, sans-serif;
+}
+.modal-geek .msg a {color: rgba(255, 255, 255, 0.90);}
+.modal-geek .msg-error {background-color: #991f1f;}
+.modal-geek .msg-ok {background-color: #74b336;}
 
 /*--| 5· Tienda
 -------------------------------------------------------------------------- |--*/
@@ -2947,3 +2990,38 @@ footer {
 .wrapper, .nano {
   width: 98%;
   height: 78%; }
+
+/*--| 1· Big Screen
+-------------------------------------------------------------------------- |--*/
+@media (min-width: 1441px) {
+  .wrapper, .nano {
+    height: 82%;
+    margin-top: -20%; }
+
+  .categorias li {
+    margin: 10px; } }
+/*--| 2· 1440
+-------------------------------------------------------------------------- |--*/
+@media (max-width: 1440px) and (min-width: 1367px) {
+  .wrapper, .nano {
+    height: 80%;
+    margin-top: -21%;
+    background-color: #8b21a6; }
+
+  .categorias li {
+    margin: 24px; } }
+/*--| 3· 1280
+-------------------------------------------------------------------------- |--*/
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .wrapper, .nano {
+    height: 78%;
+    margin-top: -20%; }
+
+  .categorias li {
+    margin: 7px; } }
+/*--| 4· 1024
+-------------------------------------------------------------------------- |--*/
+@media (max-width: 1024px) and (min-width: 781px) {
+  .wrapper, .nano {
+    height: 78%;
+    margin-top: -25%; } }

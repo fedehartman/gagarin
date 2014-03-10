@@ -1,3 +1,34 @@
+/*--| jQuery random background changer
+-------------------------------------------------------------------------- |--*/
+
+(function($) {
+
+  $.randombg = {
+    defaults: {
+      directory: "img/gif/",
+      howmany: 3
+
+    }
+  }
+    $.fn.extend({
+        randombg:function(config) {
+            var config = $.extend({}, $.randombg.defaults, config);
+      return this.each(function() {
+    
+        var directory = config.directory, howmany = config.howmany;
+
+        var which = Math.floor(Math.random()*howmany)+1;
+        $(this).css({"background" : "url(" +directory + which + ".gif) no-repeat center center"});
+        
+            })
+        }
+    })
+})(jQuery);
+
+
+
+
+
 /*--| NanoScrollerJS
 -------------------------------------------------------------------------- |--*/
 
