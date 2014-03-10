@@ -2518,6 +2518,15 @@ footer {
 .categorias li .vota a:active {
   background-color: #42661f; }
 
+.categorias li.cat-locked {
+  background: url(../../img/front/sprite.png) no-repeat -295px -120px; }
+
+.categorias li.cat-geek {
+  background: url(../../img/front/sprite.png) no-repeat -295px -120px; }
+
+.categorias li.cat-cerrada {
+  background: url(../../img/front/sprite.png) no-repeat -295px -120px; }
+
 /*--| 5· Tienda
 -------------------------------------------------------------------------- |--*/
 .tienda .listado ul {
