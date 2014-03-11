@@ -1,13 +1,13 @@
 /*--| 01· Home
 -------------------------------------------------------------------------- |--*/
 
-.home {
+/* .home {
 
 .wrapper {
   width: 1110px;
   height: 465px;
   margin: -230px 0px 0px -555px;
-  /* background: url(../../img/front/guide.png) repeat 0px 0px; */
+  background: url(../../img/front/guide.png) repeat 0px 0px;
 }
 
 h1 {
@@ -201,3 +201,222 @@ nav ul {
 .kkc-days-text {color: $red;}
 
 }
+ */
+
+
+
+
+
+
+ .home .wrapper {
+  width: 1200px;
+  height: 600px;
+  margin: -310px 0px 0px -600px; }
+.home h1 {
+  width: 580px;
+  height: 210px;
+  margin: 0px 0px 0px 0px;
+  position: absolute;
+  margin: 70px 0px 0px 20px;
+  background: url(../../img/front/sprite2.png) no-repeat 0px 0px; }
+.home h2 {
+  width: 500px;
+  height: 120px;
+  margin: 119px 0px 0px 662px;
+  font-size: 2em;
+  line-height: 1.5em;
+  color: #0a8bcc;
+  font-weight: normal;
+  font-family: 'Asap', Arial, Helvetica, sans-serif;
+  position: absolute; }
+  .home h2 a {
+    color: #0a8bcc;
+    padding: 3px 5px;
+    margin: -3px -5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px; }
+    .home h2 a:hover {
+      background-color: #0a8bcc;
+      color: #fff; }
+.home .gif {
+  width: 200px;
+  height: 105px;
+  margin: 0px 0px 0px 660px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.15); }
+.home nav ul {
+  width: 330px;
+  height: auto;
+  min-height: 20px;
+  overflow: hidden;
+  margin: 300px 0px 0px 270px;
+  position: absolute; }
+  .home nav ul li a {
+    text-align: right;
+    display: inline-block;
+    width: auto;
+    float: right;
+    height: 35px;
+    margin: 0px 0px 5px 0px;
+    background-color: #0a8bcc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 1.6em;
+    line-height: 35px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Asap', Arial, Helvetica, sans-serif;
+    padding: 0px 10px 0px 50px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .home nav ul li a:hover {
+      background-color: #065780; }
+  .home nav ul .b01 a {
+    background-color: #b32d12;
+    height: 40px;
+    font-size: 2em;
+    line-height: 40px;
+    padding-left: 240px; }
+.home .social {
+  width: 155px;
+  height: 20px;
+  margin: 510px 0px 0px 447px;
+  position: absolute; }
+  .home .social .tw {
+    float: left;
+    width: 75px;
+    height: 20px;
+    margin: 0px 0px 0px 0px; }
+  .home .social .fb {
+    float: right;
+    width: 80px;
+    height: 20px;
+    margin: 0px 0px 0px 0px;
+    overflow: hidden; }
+.home .widget {
+  width: 460px;
+  height: 280px;
+  margin: 295px 0px 0px 664px;
+  position: absolute;
+  color: #999; }
+.home .line {
+  background-color: #0a8bcc;
+  position: absolute;
+  opacity: .3; }
+.home .line.line01 {
+  width: 30px;
+  height: 1px;
+  margin: 176px 0px 0px 615px; }
+.home .line.line02 {
+  width: 1px;
+  height: 35px;
+  margin: 247px 0px 0px 520px; }
+.home .line.line03 {
+  width: 1px;
+  height: 20px;
+  margin: 258px 0px 0px 850px; }
+.home .line.line04 {
+  width: 680px;
+  height: 1px;
+  margin: 566px 0px 0px 446px; }
+.home .creditos {
+  width: 40px;
+  height: 15px;
+  margin: 0px 0px 0px 0px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 20; }
+  .home .creditos .sov a {
+    width: 15px;
+    height: 15px;
+    margin: 0px 0px 0px 0px;
+    background: url(../../img/front/sprite2.png) no-repeat -25px -210px;
+    float: right; }
+  .home .creditos .les a {
+    width: 25px;
+    height: 15px;
+    margin: 0px 0px 0px 0px;
+    background: url(../../img/front/sprite2.png) no-repeat 0px -210px;
+    float: left; }
+
+ .gala .wrapper {
+  width: 1200px;
+  /* height: 1100px; */
+  margin-left: -600px;}
+.gala figure {
+  width: 1200px;
+  height: 955px;
+  margin: 0px 0px 0px 0px;
+  overflow: hidden;
+  background: url(../../img/front/gala.png) no-repeat 0px -65px;
+}
+
+.gala figure .map {
+  width: 500px;
+  height: 160px;
+  margin: 190px 0px 0px 420px;
+  padding: 0px 0px 0px 0px;
+}
+
+
+
+
+.modal-geek figure {
+ width: 400px;
+ height: 150px;
+ margin: 0px 0px 0px 0px;
+ background: url(../../img/front/sprite.png) no-repeat 0px -1000px;}
+
+.modal-geek p {margin-left: 1px;}
+.modal-geek form {
+ width: 400px;
+ height: 30px;
+ margin: 20px 0px 10px 0px;
+ }
+
+.modal-geek form input {
+ background-color: #fff;
+ width: 300px;
+ height: 28px;
+ margin: 0px 5px 0px 0px;
+ float: left;
+ padding: 0px 10px 0px 10px;
+ border: 1px solid rgba(0, 0, 0, 0.35);
+ font-size: 1.3em; line-height: 30px; color: rgba(0, 0, 0, 0.75);
+ font-weight: normal; font-family: 'Asap', Arial, Helvetica, sans-serif;
+ }
+
+.modal-geek form input.submit {
+ cursor: pointer;
+ float: left;
+ width: 60px;
+ height: 30px;
+ margin: 0px 0px 0px 0px;
+ background-color: #1f5c99;
+ font-size: 1.3em; line-height: 30px; color: rgba(255, 255, 255, 0.95);
+ font-weight: 700; font-family: 'Asap', Arial, Helvetica, sans-serif;
+ }
+
+.modal-geek .msg {
+ display: block;
+ width: 455px;
+ padding: 0px 10px 0px 10px;
+ height: 35px;
+ margin: 0px 0px 0px 0px;
+ background-color: #8b21a6;
+ font-size: 1.3em; line-height: 35px; color: rgba(255, 255, 255, 0.90);
+ font-weight: 700; font-family: 'Asap', Arial, Helvetica, sans-serif;
+}
+.modal-geek .msg a {color: rgba(255, 255, 255, 0.90);}
+.modal-geek .msg-error {background-color: #991f1f;}
+.modal-geek .msg-ok {background-color: #74b336;}
