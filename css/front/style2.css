@@ -2743,7 +2743,9 @@ nav ul {
   height: 25px;
   margin: 0px 0px 0px 0px;
   position: absolute;
-  display: block; }
+  display: block;
+  background-color: #8b21a6;
+  opacity: .7; }
 
 .l-01 {
   width: 85px;
@@ -2804,6 +2806,18 @@ nav ul {
 .l-15 {
   width: 81px;
   margin: 408px 0px 0px 802px; }
+
+.l-16 {
+  width: 89px;
+  margin: 542px 0px 0px 880px; }
+
+.l-17 {
+  width: 92px;
+  margin: 561px 0px 0px 796px; }
+
+.l-18 {
+  width: 112px;
+  margin: 584px 0px 0px 867px; }
 
 /*--| 5· Tienda
 -------------------------------------------------------------------------- |--*/

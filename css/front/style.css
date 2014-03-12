@@ -272,18 +272,12 @@ html {
   top: 0%;
   right: 0%; }
 
-/* .wrapper {
+.wrapper {
   width: 1200px;
   overflow: hidden;
   position: relative;
   left: 50%;
-  margin: 55px 0px 0px -600px;
-  } */
-.wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -17% 0px 0px -49%; }
+  margin: 55px 0px 0px -600px; }
 
 .mov-imago {
   animation-name: mov-imago;
@@ -2749,7 +2743,9 @@ nav ul {
   height: 25px;
   margin: 0px 0px 0px 0px;
   position: absolute;
-  display: block; }
+  display: block;
+  background-color: #8b21a6;
+  opacity: .7; }
 
 .l-01 {
   width: 85px;
@@ -2808,6 +2804,18 @@ nav ul {
   margin: 368px 0px 0px 962px; }
 
 .l-15 {
+  width: 81px;
+  margin: 408px 0px 0px 802px; }
+
+.l-16 {
+  width: 89px;
+  margin: 368px 0px 0px 862px; }
+
+.l-17 {
+  width: 75px;
+  margin: 368px 0px 0px 962px; }
+
+.l-18 {
   width: 81px;
   margin: 408px 0px 0px 802px; }
 
