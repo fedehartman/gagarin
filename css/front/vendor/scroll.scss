@@ -2,12 +2,18 @@
 /*--| Scroll
 --------------------------------- |--*/
 
+/* .nano {
+  position: relative;
+  width: 1220px;
+  height: 100%;
+  overflow: hidden;
+  } */
+
 .nano {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  }
+  overflow: hidden; }
 
 .nano > .nano-content {
   position: absolute;
@@ -52,4 +58,6 @@
 .nano > .nano-pane:hover > .nano-slider {opacity: 1;}
 .nano:hover > .nano-pane, .nano-pane.active, .nano-pane.flashed {opacity: 0.98;}
 
-.wrapper, .nano {width: 98%; height: 78%;}
+.wrapper, .nano {
+  width: 98%;
+  height: 78%; }

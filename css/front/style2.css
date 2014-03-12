@@ -272,18 +272,12 @@ html {
   top: 0%;
   right: 0%; }
 
-/* .wrapper {
+.wrapper {
   width: 1200px;
   overflow: hidden;
   position: relative;
   left: 50%;
-  margin: 55px 0px 0px -600px;
-  } */
-.wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -17% 0px 0px -49%; }
+  margin: 55px 0px 0px -600px; }
 
 .mov-imago {
   animation-name: mov-imago;

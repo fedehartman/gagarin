@@ -19,35 +19,22 @@ html {overflow: hidden;}
 
 .a00 {background-color: #fff; z-index: 0;} /*home*/
 .a01 {background-color: #2e6399; right: -100%;} /*votación*/
-.a02 {background-color: #b21247; left: -100%;}
-.a03 {background-color: #b21247; bottom: -100%;}
+.a02 {background-color: #b21247; left: -100%;} /*gala*/
+.a03 {background-color: #b21247; bottom: -100%;} /*participá*/
 .a04 {background-color: #609926; top: -100%;} /*tienda*/
+.a05 {background-color: #609926; top: -100%; right: -100%;} /*premios*/
 .tapar {background-color: #e6bd45; z-index:800; top: 0px; left: 0px;}
 
 .m01 {top: 0%; right: 0%;}
 .m02 {top: 0%; left: 0%;}
 .m03 {bottom: 0%; left: 0%;}
 .m04 {top: 0%; left: 0%;}
+.m05 {top: 0%; right: 0%;}
 
 .wrapper {
-  position: absolute;
-  top: 50%;
+  width: 1200px;
+  overflow: hidden;
+  position: relative;
   left: 50%;
-  margin: -17% 0px 0px -49%;
+  margin: 55px 0px 0px -600px;
   }
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-       -o-border-radius: $radius;
-          border-radius: $radius;
-}
-
-@mixin transition($time) {
-  -webkit-transition: $time;
-     -moz-transition: $time;
-      -ms-transition: $time;
-       -o-transition: $time;
-          transition: $time;
-}

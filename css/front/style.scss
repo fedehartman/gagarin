@@ -12,10 +12,10 @@
 /*--| Modules
 -------------------------------------------------------------------------- |--*/
 
+@import "modules/common";
 @import "modules/header";
 @import "modules/modal";
 @import "modules/footer";
-@import "modules/common";
 
 
 
@@ -34,7 +34,6 @@
 /*--| Vendor
 -------------------------------------------------------------------------- |--*/
 
-@import "vendor/lightbox";
 @import "vendor/scroll";
 
 @import "base/mq";
